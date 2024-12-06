@@ -1,0 +1,320 @@
+/* Default styles */
+.graphcontainer {
+    width: 200%; 
+    margin-left: -30%; 
+    padding: 6px;
+    font-family: "calibri";
+    margin-top: 80px;
+    border-radius: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.title-container {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.graphheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.graphheader h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 290px;
+}
+
+.graphsubtitle {
+    font-size: 17px;
+    color: #666;
+}
+
+.graph-price-update {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    margin-right: 900px;
+}
+
+.graphprice {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.graphupdate {
+    font-size: 12px;
+    color: #888;
+    margin-top: 2px;
+}
+
+.graphstock-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 5px 0;
+    margin-left: 290px;
+}
+
+.graphnse {
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.graphsector {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.graphnavbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-left: 280px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.graphnavbar:hover {
+    cursor: pointer;
+}
+
+.graphnavbar span {
+    font-size: 15px;
+    color: #333;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.graphnavbar span:hover {
+    color: #24b676;
+    text-decoration: underline;
+    text-decoration-color: #24b676;
+}
+
+.graphnavbar a {
+    font-size: 15px;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    font-weight: 500;
+}
+
+.graphnavbar a:hover {
+    color: #24b676;
+    background-color: #e6f4ed;
+    border-color: #24b676;
+}
+
+.graphnavbar a.active {
+    color: #ffffff;
+    background-color: #24b676;
+    border-color: #24b676;
+    font-weight: bold;
+}
+
+/* Media Queries for Mobile Views */
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    .graphcontainer {
+        width: 100%; 
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .graphheader h1 {
+        font-size: 20px;
+        margin-left: 0; 
+    }
+
+    .graph-price-update {
+        margin-right: 0;
+    }
+
+    .graphnavbar {
+        margin-left: 0;
+        justify-content: space-evenly; 
+    }
+
+    .graphnavbar span, .graphnavbar a {
+        font-size: 14px; 
+        padding: 8px 16px; 
+    }
+
+    .graphprice {
+        font-size: 20px; 
+    }
+
+    .graphupdate {
+        font-size: 10px; 
+    }
+
+    .graphstock-info {
+        margin-left: 0; 
+        justify-content: space-between; 
+        flex-wrap: wrap; 
+    }
+
+    .graphnse, .graphsector {
+        font-size: 12px; 
+        padding: 4px 8px; 
+    }
+
+    .title-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+}
+
+/* For screens 480px and below */
+@media (max-width: 768px) {
+    /* Show navbar logo, and dropdown icon on mobile */
+    .navbar-logo,
+    .navbar-icons,
+    .profile-section {
+      display: flex;
+    }
+  
+    /* Hide main navbar links in mobile view */
+    .navbar-links {
+      display: none;
+    }
+  
+    .footer-nav {
+      display: flex;
+    }
+  
+    /* Hide search input on mobile */
+    .navbar-search {
+      display: none;
+    }
+  
+    /* Adjust profile section layout */
+    .profile-section span {
+      font-size: 14px;
+    }
+  
+    /* Adjust logo size */
+    .logo-image {
+      width: 180px;
+    }
+  
+    /* Stock dropdown menu */
+    .stockmenu {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      left: 0; /* Align to the left side */
+      width: 70%;
+      height: 90vh; /* Full height on mobile */
+      gap: 10px;
+      transform: translateY(-50%);
+    }
+    
+    /* Styling for the divider line */
+    .stockmenu::before {
+      content: ""; /* Empty content for the line */
+      background: #ddd; /* Line color */
+    }
+    
+    /* Chevron Icon */
+    .chevron-icon {
+      margin-left: 5px;
+      color: black;
+      font-size: 14px;
+      transition: transform 0.3s ease;
+    }
+  
+    /* Dropdown menu for user profile */
+    .dropdown-menu {
+      position: static; /* Allow dropdown to flow naturally */
+      box-shadow: none; /* Remove shadow for simplicity */
+      width: 100%; /* Use full width */
+      margin-top: 10px; /* Add spacing above */
+    }
+  
+    .dropdown-menu li {
+      font-size: 14px; /* Reduce font size */
+      padding: 10px 12px; /* Adjust padding */
+    }
+  
+    .dropdown-icon {
+      font-size: 20px; /* Adjust icon size */
+    }
+  }
+  
+  /* Additional styles for 480px and below */
+  @media (max-width: 480px) {
+    /* Adjust logo size for smaller screens */
+    .logo-image {
+      width: 150px; /* Reduce logo size */
+    }
+  
+    /* Adjust navbar logo size */
+    .navbar-logo {
+      font-size: 16px; /* Smaller font size */
+    }
+  
+    /* Adjust profile section layout */
+    .profile-section span {
+      font-size: 12px; /* Smaller font size */
+    }
+  
+    /* Adjust navbar icons */
+    .navbar-icons {
+      font-size: 14px; /* Smaller icons */
+    }
+  
+    /* Stock dropdown menu adjustments */
+    .stockmenu {
+      width: 800%;
+    height: 200vh;
+    left: 0;
+    transform: translateY(-30%);
+    gap: 5px;
+    }
+  
+    /* Dropdown menu adjustments */
+    .dropdown-menu li {
+      font-size: 12px; /* Smaller font size for dropdown */
+      padding: 8px 10px; /* Reduce padding */
+    }
+  
+    /* Adjust button and icon sizes */
+    .dropdown-icon {
+      font-size: 18px; /* Smaller icon size */
+    }
+  
+    .chevron-icon {
+      font-size: 12px; /* Smaller chevron icon */
+    }
+  
+    /* Adjust footer nav layout */
+    .footer-nav {
+      font-size: 12px; /* Smaller font size for footer items */
+      margin-right: 300px;
+    }
+  }
+  

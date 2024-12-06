@@ -1,0 +1,135 @@
+.candlestick-chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+ 
+}
+
+/* Card styling */
+.MuiCard-root {
+
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+ width: 1200px;
+ border: 2px solid #a9c3e2;
+}
+
+/* Header text styling */
+.candlestick-chart-container h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+ 
+  margin-bottom: 16px;
+}
+
+/* Chart styling */
+.apexcharts-canvas {
+  margin-top: 10px;
+}
+
+/* Divider styling */
+.MuiDivider-root {
+  margin: 10px 0;
+}
+.timeframe-selector {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.timeframe-item {
+  margin: 0 8px;
+  cursor: pointer;
+  color: #666;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.timeframe-item.active {
+  color: #0349a8;
+  font-weight: bold;
+  border-bottom: 2px solid #0349a8;
+}
+
+.timeframe-item:hover {
+  color: #0349a8;
+}
+  @media (max-width: 768px) {
+    .candlestick-chart-container {
+        margin: 10px;
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    .MuiCard-root {
+        width: 100%; /* Make the card take full width on smaller screens */
+        padding: 10px; /* Adjust padding inside the card */
+    }
+
+    .candlestick-chart-container h1 {
+        font-size: 1.25rem; /* Slightly smaller header font size */
+        text-align: center; /* Center the title */
+        margin-bottom: 12px;
+    }
+
+    .apexcharts-canvas {
+        margin-top: 8px; /* Reduced margin for smaller screens */
+    }
+
+    .MuiDivider-root {
+        margin: 8px 0; /* Slightly smaller margin for the divider */
+    }
+
+    .timeframe-selector {
+        justify-content: space-between; /* Space out items on smaller screens */
+        padding: 8px; /* Reduced padding */
+    }
+
+    .timeframe-item {
+        font-size: 14px; /* Smaller font size for mobile */
+        margin: 0 5px; /* Adjust margins */
+    }
+}
+
+/* Mobile View for Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .candlestick-chart-container {
+        margin: 5px;
+        padding: 10px; /* Further reduced padding for small devices */
+        width: 350px; /* Full width for small screens */
+        height: 430px;
+        margin-top: 120px;
+    }
+
+    .MuiCard-root {
+        
+        padding: 4px; /* Further reduced padding inside the card */
+       
+    }
+
+    .candlestick-chart-container h1 {
+        font-size: 1.1rem; /* Even smaller header font size */
+        margin-bottom: 10px; /* Reduced bottom margin */
+        text-align: center; /* Ensure title is centered */
+    }
+
+    .apexcharts-canvas {
+        margin-top: 6px; /* Even smaller margin for small screens */
+    }
+
+    .MuiDivider-root {
+        margin: 6px 0; /* Reduced margin for divider */
+    }
+
+    .timeframe-selector {
+        justify-content: space-between; /* Ensure items are spaced out */
+        padding: 6px; /* Reduced padding */
+    }
+
+    .timeframe-item {
+        font-size: 12px; /* Even smaller font size */
+        margin: 0 4px; /* Adjust margins for small devices */
+    }
+}

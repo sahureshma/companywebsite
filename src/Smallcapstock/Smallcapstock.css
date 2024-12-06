@@ -1,0 +1,288 @@
+/* StockTable Styling */
+.stock-table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'calibri';
+    
+  }
+  
+  /* Header styling */
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    font-size: 30px; /* Default font size for larger screens */
+    text-align: left;
+    flex: 1;
+    margin: 0;
+    color: #000;
+    margin-top: 70px;
+    
+  }
+  
+ 
+  /* Filter section styling */
+  .filters {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .filters span {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Dropdown-style filter buttons */
+  .filter-dropdown {
+    position: relative;
+  }
+  
+  .filter-button {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filter-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Dropdown menu for multi-select options */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .dropdown-menu label {
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .dropdown-menu input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  /* Stock table styling */
+  .stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .stock-table th, .stock-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .stock-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .stock-table .positive {
+    color: #4CAF50;
+  }
+  
+  .stock-table .negative {
+    color: #F44336;
+  }
+  
+  /* Show More button styling */
+  .show-more-button {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #0349a8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer styling */
+  .footer {
+    text-align: center;
+    font-size: 15px;
+    color: #0349a8;
+  }
+  
+  /* Hover effect for dropdown button (toggle caret direction) */
+  .filter-button:hover .fa-caret-down,
+  .filter-button:hover .fa-caret-up {
+    color: #24b676;  /* Change the caret color to blue when hovering over button */
+  }
+  
+  /* Hover effect for dropdown button */
+  .filter-button:hover {
+    color: #24b676;  /* Change text color to blue on hover */
+  }
+  
+  .stock-table th {
+    background-color: #24b676;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .dropdown-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .reset-filters-button, .apply-filters-button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .reset-filters-button {
+    background-color: #24b676;
+    color: white;
+  }
+  
+  .apply-filters-button {
+    background-color: #24b676;
+    color: white;
+  }
+  
+  /* Price Change Range Styling */
+  /* Price Change Range Styling */
+  .price-change-range {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .price-change-range label {
+    margin-right: 8px;
+  }
+  
+  /* Remove "min" and "max" text */
+  .price-change-range .min-text,
+  .price-change-range .max-text {
+    display: flex; /* Hide the min and max text completely */
+  }
+  
+  .to-label {
+    margin: 0 8px;
+    font-weight: bold;
+  }
+  
+  .slider {
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  
+  /* Media Queries for Mobile Responsiveness */
+  /* Ensure the table has horizontal scrolling on small screens */
+@media (max-width: 768px) {
+  .stock-table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+    display: block; /* Prevent layout issues */
+  }
+
+  .stock-table {
+    min-width: 600px; /* Ensure table has a minimum width for scrolling */
+    width: auto; /* Allow table to extend beyond container */
+    border-collapse: collapse;
+  }
+
+  .stock-table th, .stock-table td {
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  .filters {
+    flex-wrap: wrap; /* Wrap filter elements for better use of space */
+  }
+
+  .filters span {
+    flex: 0 0 100%; /* Make labels take full width */
+    margin-bottom: 8px; /* Add spacing below labels */
+  }
+
+  .filter-button {
+    padding: 10px; /* Increase padding for touch screens */
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .header h2 {
+    font-size: 18px;
+    margin-top: 70px;
+    
+  }
+
+  .header p {
+    font-size: 14px;
+  }
+
+  .filters {
+    gap: 8px;
+  }
+
+  .filter-button {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .show-more-button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .dropdown-menu {
+    max-width: 300px;
+  }
+
+  .dropdown-menu label {
+    font-size: 12px;
+  }
+
+  .dropdown-actions button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .stock-table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+    max-width: 100%; /* Ensure the container doesn't exceed screen size */
+    margin: 0 auto; /* Center the container */
+  }
+
+  .stock-table {
+    min-width: 600px; /* Minimum width for table */
+    width: auto; /* Allow table to stretch */
+  }
+
+  .stock-table th, .stock-table td {
+    font-size: 10px;
+    padding: 6px;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+}

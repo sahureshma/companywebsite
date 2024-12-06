@@ -1,0 +1,116 @@
+.iti-limited-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'calibri';
+  line-height: 1.3;
+  color: black;
+}
+
+.iti-limited-container h1 {
+  font-size: 26px;
+  color: #24b676;
+  margin-bottom: 20px;
+}
+
+.iti-limited-container h2 {
+  font-size: 17px;
+  color: black;
+  margin-top: 30px;
+}
+
+.iti-limited-container h3 {
+  font-size: 17px;
+  color: black;
+  margin-top: 20px;
+}
+
+.iti-limited-container p {
+  margin-bottom: 15px;
+  color: black;
+  font-size: 15px;
+}
+
+.iti-limited-container ul {
+  padding-left: 20px;
+}
+
+.iti-limited-container ul li {
+  margin-bottom: 8px;
+}
+.read-more-btn {
+  background-color: #24b676;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  float: right; /* Aligns the button to the right */
+}
+
+.read-more-btn:hover {
+  background-color: #1b9e5a;
+}
+/* Mobile View for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .iti-limited-container {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .iti-limited-container h1 {
+    font-size: 1.3em; /* Slightly smaller heading font size */
+  }
+
+  .iti-limited-container h2, .iti-limited-container h3 {
+    font-size: 15px; /* Adjust h2 and h3 font size */
+    margin-top: 25px; /* Slightly reduce top margin for headings */
+  }
+
+  .iti-limited-container p {
+    font-size: 14px; /* Reduce paragraph font size for better readability */
+  }
+
+  .read-more-btn {
+    font-size: 14px; /* Slightly reduce button font size */
+    padding: 8px 15px; /* Adjust padding of the button */
+    margin-top: 15px; /* Adjust margin for button on smaller screens */
+    float: none; /* Remove float to allow button to be centered or align naturally */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+}
+
+/* Mobile View for Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .iti-limited-container {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .iti-limited-container h1 {
+    font-size: 1.1em; /* Further reduce heading font size */
+  }
+
+  .iti-limited-container h2, .iti-limited-container h3 {
+    font-size: 14px; /* Further reduce h2 and h3 font size */
+    margin-top: 20px; /* Reduce top margin */
+  }
+
+  .iti-limited-container p {
+    font-size: 13px; /* Further reduce paragraph font size */
+  }
+
+  .read-more-btn {
+    font-size: 13px; /* Further reduce button font size */
+    padding: 6px 12px; /* Adjust padding for smaller screens */
+    margin-top: 10px; /* Adjust margin for the button */
+    float: none; /* Ensure the button doesn't float */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,105 @@
+.news-list {
+    font-family: 'Calibri';
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .news-list h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #24b676;
+    margin-left: 10px;
+  }
+  
+  .news-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .news-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background-color: #fff;
+    transition: box-shadow 0.2s;
+  }
+  
+  .news-item:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-date {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 4px;
+  }
+  
+  .news-title {
+    font-size: 1em;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .news-list h2, .news-list ul {
+    padding-left: 20px;
+  }
+  
+  .news-item:last-child {
+    margin-bottom: 0;
+  }
+  /* Mobile View for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .news-list {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .news-list h2 {
+    font-size: 1.3em; /* Adjust font size for tablets */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .news-item {
+    padding: 10px; /* Reduce padding in news items */
+  }
+
+  .news-date {
+    font-size: 0.8em; /* Slightly smaller date font */
+  }
+
+  .news-title {
+    font-size: 0.95em; /* Slightly smaller title font */
+  }
+}
+
+/* Mobile View for Very Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .news-list {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .news-list h2 {
+    font-size: 1.1em; /* Further reduce heading font size */
+   
+  }
+
+  .news-item {
+    padding: 8px; /* Further reduce padding in news items */
+  }
+
+  .news-date {
+    font-size: 0.75em; /* Further reduce font size for date */
+  }
+
+  .news-title {
+    font-size: 0.9em; /* Further reduce title font size */
+  }
+
+  .news-list ul {
+    padding-left: 10px; /* Reduce padding on the list */
+  }
+}

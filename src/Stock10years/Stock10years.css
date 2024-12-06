@@ -1,0 +1,285 @@
+.financial-table {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: 'calibri';
+  
+}
+.App{
+  font-family: 'calibri';
+}
+
+.financial-table table  {
+width: 100%;
+  border-collapse: collapse;
+}
+
+.financeheader{
+  font-size: 24px;
+  color:#24b676;
+   margin-top: 100px;
+   font-family: 'calibri';
+   margin-left: 30px;
+ 
+
+}
+.financepara{
+  margin-right: 65%;
+  bottom: 0;
+  font-family: 'calibri';
+  color: #666;
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Header Styling */
+.financial-table th {
+  background-color:  #24b676;  /* Blue header background */
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px;
+  text-align: center;
+  
+}
+
+/* Row Styling */
+.financial-table td {
+  padding: 10px;
+  text-align: center;
+  
+  font-size: 14px;
+}
+
+.financial-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;  /* Light gray for alternate rows */
+}
+
+.financial-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Positive and Negative Value Styling */
+.positive {
+  color: green;
+  font-weight: bold;
+}
+
+.negative {
+  color: red;
+  font-weight: bold;
+}
+
+/* Specific Styling for Key Financial Parameters Table */
+.key-financial-parameters {
+  border: 2px solid #333;
+  margin-top: 30px;
+}
+
+.key-financial-parameters h2 {
+  color:  #24b676;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.key-financial-parameters th {
+  background-color:  black; /* Use the same blue as the header */
+}
+
+.key-financial-parameters td {
+  font-weight: 400; /* Regular weight for data */
+}
+
+.key-financial-parameters td.positive {
+  color: #27AE60; /* Darker green for positive */
+}
+
+.key-financial-parameters td.negative {
+  color: #E74C3C; /* Darker red for negative */
+}
+
+/* Optional: Additional Spacing and Box Shadow */
+.financial-table {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow around table */
+  margin: 20px 0;
+}
+
+
+
+.neutral {
+  color: black;
+}
+.financial-table {
+  margin: 20px;
+  border-collapse: collapse;
+  position: relative;
+}
+
+.button-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 10px;
+ padding: 40px;
+ margin-top: 1170px;
+  
+}
+
+.standalone-button,
+.consolidated-button {
+  padding: 8px 12px;
+  border: 2px solid #28a745;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  color: #28a745;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 150px;
+  
+}
+
+.consolidated-button {
+  background-color:white;
+  color: #24b676;
+
+}
+
+.standalone-button:hover {
+  background-color: #24b676;
+  color: white;
+}
+
+.consolidated-button:hover {
+  background-color:#24b676;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  /* Financial table styling for mobile */
+  .financial-table {
+    margin-top: 10px; /* Reduce margin for smaller screens */
+    padding: 10px; /* Add padding to avoid content touching the edges */
+    overflow-x: auto; /* Enable horizontal scrolling for the table */
+    margin-bottom: 60px;
+  }
+
+  .financeheader {
+    font-size: 18px; /* Slightly smaller font size for the header */
+    margin-right: 60%; /* Adjust margins for mobile */
+    margin-left: 20px;
+  }
+
+  .financepara {
+    font-size: 14px; /* Reduce font size */
+    margin-right: 50%;
+    margin-left: 20px;
+    color: #333;
+  }
+
+  .financial-table table {
+    width: 100%; /* Full width of the screen */
+    font-size: 12px; /* Smaller font size for better fit */
+    table-layout: auto; /* Allow the table to adjust to screen width */
+  }
+
+  .financial-table th,
+  .financial-table td {
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+
+  .financial-table th {
+    font-size: 12px; /* Smaller font size for headers */
+  }
+
+  /* Adjust row backgrounds for mobile */
+  .financial-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Keep alternating row colors */
+  }
+
+  .financial-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  /* Button container adjustments */
+  .button-container {
+    position: relative; /* Allow positioning within the table container */
+    margin-top: 20px; /* Reduce margin */
+    padding: 0;
+    justify-content: center; /* Center buttons */
+  }
+
+  .standalone-button,
+  .consolidated-button {
+    padding: 8px 12px; /* Button size for mobile */
+    font-size: 14px; /* Adjust font size */
+    width: 100%; /* Full width for buttons */
+    text-align: center; /* Center text inside button */
+    margin-bottom: 10px;
+    margin-top: 1px;
+  }
+
+  .standalone-button:hover,
+  .consolidated-button:hover {
+    background-color: #24b676;
+    color: white;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for smaller mobile screens */
+  .financial-table {
+    margin: 10px 5px; /* Tighter margins */
+    padding: 5px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    margin-bottom: 50px;
+  }
+
+  .financeheader {
+    font-size: 16px; /* Smaller font size */
+    margin-left: 15px;
+    margin-right: 55%; /* Adjust header positioning */
+  }
+
+  .financepara {
+    font-size: 12px; /* Even smaller font size */
+    margin-left: 15px;
+    margin-right: 45%; /* Adjust margins */
+  }
+
+  .financial-table table {
+    font-size: 10px; /* Smaller font for mobile */
+    table-layout: auto; /* Allow table to adjust to available space */
+  }
+
+  .financial-table th,
+  .financial-table td {
+    padding: 6px; /* Reduce padding */
+  }
+
+  /* Adjust row backgrounds for smaller screens */
+  .financial-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Keep alternating colors */
+  }
+
+  .financial-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  .standalone-button,
+  .consolidated-button {
+    padding: 6px 10px; /* Smaller padding for small screens */
+    font-size: 12px; /* Further reduce font size */
+    width: 100%; /* Make buttons full width */
+    text-align: center; /* Center text */
+  }
+
+  .standalone-button:hover,
+  .consolidated-button:hover {
+    background-color: #24b676;
+    color: white;
+  }
+}

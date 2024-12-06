@@ -1,0 +1,48 @@
+.gold-returns-container {
+   
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 400px;
+   margin-left: 190px;
+    background-color: #f9f9f9;
+    box-shadow: 0 3px 5px rgb(127, 171, 225);;
+    border: 1px solid rgb(127, 171, 225);
+    margin-top: 20px;
+  }
+  
+  .gold-returns-title {
+   
+    margin-left: 190px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 50px;
+  }
+  
+  .gold-returns-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .gold-returns-row:last-child {
+    border-bottom: none;
+  }
+  
+  .gold-returns-label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .gold-returns-value {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .gold-returns-value.highlighted {
+    color: #27a745;
+    font-weight: bold;
+  }
+  

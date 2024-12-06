@@ -1,0 +1,176 @@
+.funds-table-container {
+    width: 90%;
+    margin: 20px auto;
+    font-family: 'calibri';
+    color: #333;
+    margin-top: 100px;
+  }
+  
+  .funds-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .funds-table-title {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px;
+   margin-top: 110px;
+   margin-right: 50px;
+  }
+  
+  .fund-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .fund-button.regular {
+    
+    border: 1px solid black;
+
+  }
+  
+  .fund-button.direct {
+   
+    border: 1px solid black;
+   
+  }
+  
+  .funds-table-description {
+    
+    justify-content: space-between;
+    align-items:left;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: black;
+    margin: 15px 0;
+  }
+  
+ 
+  .funds-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .funds-table-header th {
+    background-color: #24b676;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+   
+  }
+  
+  .funds-table-row td {
+    padding: 10px;
+    
+  }
+  
+  .funds-table-row:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  .funds-table-row td:first-child {
+    text-align: left; /* Ensures the first column, typically the name, aligns left */
+  }
+ 
+  .star {
+    color: #24b676; /* Green color for the stars */
+    font-weight: bold; /* Optional: make the stars bold */
+  }
+  
+/* Mobile and Tablet Styles */
+
+/* For screens less than 768px (tablets and smaller) */
+@media screen and (max-width: 768px) {
+    .funds-table-container {
+        width: 95%;
+        
+    }
+
+    .funds-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+      
+    }
+
+    .funds-table-title {
+        font-size: 20px;
+    }
+
+    .button-container {
+        flex-direction: row;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+
+    .fund-button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .funds-table-description {
+        font-size: 12px;
+    }
+
+    .funds-table th, .funds-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .funds-table-header th {
+        font-size: 14px;
+    }
+}
+
+/* For screens less than 480px (small mobile devices) */
+@media screen and (max-width: 480px) {
+    .funds-table-container {
+        width: 100%;
+       
+    }
+
+    .funds-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .funds-table-title {
+        font-size: 18px;
+    }
+
+    .button-container {
+        flex-direction: row;
+        margin-top: 40px;
+    }
+
+    .fund-button {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+
+    .funds-table-description {
+        font-size: 10px;
+    }
+
+    .funds-table th, .funds-table td {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .funds-table-header th {
+        font-size: 12px;
+    }
+}

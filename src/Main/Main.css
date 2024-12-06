@@ -1,0 +1,123 @@
+.top-holdings {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  max-width: 620px; /* Set a maximum width */
+  margin-left: 315px;
+  font-family: Calibri, Arial, sans-serif;
+}
+
+.top-holdings h2 {
+  font-size: 25px;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.top-holdings table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.top-holdings th,
+.top-holdings td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 17px;
+}
+
+.top-holdings th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  color: #333;
+}
+
+.positive {
+  color: #24b676;
+}
+
+.negative {
+  color: #F44336;
+}
+
+.symbol {
+  color: #0349a8;
+}
+
+.main-dashboard {
+  display: flex;
+  padding: 10px;
+}
+
+.left-panel {
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 5px; /* Add this line to create a gap between panels */
+}
+
+.right-panel {
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Responsive styles for 768px and below */
+@media (max-width: 768px) {
+  .top-holdings {
+      margin-left: 0; /* Center the container */
+      max-width: 100%; /* Full width for smaller screens */
+      padding: 15px;
+  }
+
+  .top-holdings h2 {
+      font-size: 22px; /* Slightly reduce heading size */
+  }
+
+  .top-holdings th,
+  .top-holdings td {
+      font-size: 15px; /* Adjust font size for smaller screens */
+      padding: 10px; /* Reduce padding for compact layout */
+  }
+
+  .main-dashboard {
+      flex-direction: column; /* Stack panels vertically */
+      padding: 5px; /* Adjust padding */
+  }
+
+  .left-panel,
+  .right-panel {
+      margin-right: 0; /* Remove margin */
+      margin-bottom: 10px; /* Add spacing between stacked panels */
+  }
+}
+
+/* Responsive styles for 480px and below */
+@media (max-width: 480px) {
+  .top-holdings {
+      padding: 10px; /* Reduce padding for compact layout */
+      margin-top: 10px;
+  }
+
+  .top-holdings h2 {
+      font-size: 18px; /* Further reduce heading size */
+  }
+
+  .top-holdings th,
+  .top-holdings td {
+      font-size: 13px; /* Reduce font size for narrow screens */
+      padding: 8px; /* Adjust padding */
+  }
+
+  .main-dashboard {
+      padding: 0; /* Remove extra padding */
+  }
+
+  .left-panel,
+  .right-panel {
+      margin-bottom: 5px; /* Reduce spacing between stacked panels */
+  }
+}

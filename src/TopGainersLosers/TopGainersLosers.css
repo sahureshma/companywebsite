@@ -1,0 +1,155 @@
+.top-gainers-losers {
+    width: 100%;
+    max-width: 600px;
+    
+    font-family: Calibri, Arial, sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    margin-left: 10px;
+  }
+  
+  .top-gainers-losers h2 {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  /* Container for the tables */
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0; /* Remove padding to eliminate gaps */
+    gap: 0; /* Remove gap between tables */
+  }
+  
+  /* Shared Table Styles */
+  .table {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Make tables expand to fill container */
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0; /* Ensure no outer margin */
+  }
+  
+  /* Header and Row styling */
+  .header, .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal-width columns */
+    align-items: center;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0; /* Remove padding for tighter fit */
+  }
+  
+  /* Header specific styling */
+  .header {
+    font-weight: bold;
+    color: white;
+    padding: 10px 0; /* Add only vertical padding for the header text */
+  }
+  
+  /* Row styling */
+  .row {
+    border-top: 1px solid #ddd;
+    padding: 10px 0; /* Consistent row padding for alignment */
+    margin: 0;
+  }
+  
+  /* Gainers Table */
+  .table.gainers .header {
+    background-color: #2ecc71;
+    justify-content: space-around;
+  }
+  
+  .table.gainers .row span.positive {
+    color: #2ecc71;
+  }
+  
+  /* Losers Table */
+  .table.losers .header {
+    background-color: #e74c3c;
+    justify-content: space-around;
+  }
+  
+  .table.losers .row span.negative {
+    color: #e74c3c;
+  }
+  
+  /* Last row styling */
+  .table .row:last-child {
+    border-bottom: none;
+  }
+  /* Responsive styles for 768px and below */
+@media (max-width: 768px) {
+  .top-gainers-losers {
+      margin-top: 100px; /* Adjust top margin for smaller screens */
+      height: auto; /* Allow height to adjust automatically */
+      padding: 10px; /* Add padding for better layout */
+      
+  }
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0; /* Remove padding to eliminate gaps */
+    gap: 0; /* Remove gap between tables */
+  }
+
+  .top-gainers-losers h2 {
+      font-size: 1em; /* Reduce font size for headers */
+  }
+
+  .table {
+      margin: 5px 0; /* Add margin between tables */
+  }
+
+  .header, .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal-width columns */
+    align-items: center;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0; /* Remove padding for tighter fit */
+  }
+  .header{
+  font-weight: bold;
+    color: white;
+    padding: 10px 0;
+   } /* Add only vertical padding for the header text */
+}
+
+/* Responsive styles for 480px and below */
+@media (max-width: 480px) {
+  .top-gainers-losers {
+      margin-top: 50px; /* Further adjust top margin */
+      padding: 5px; /* Reduce padding for compact layout */
+  }
+
+  .top-gainers-losers h2 {
+      font-size: 0.9em; /* Reduce font size for headers */
+  }
+
+  .table {
+      margin: 5px 0;
+  }
+
+  .header, .row {
+      font-size: 0.7em; /* Further reduce font size */
+      grid-template-columns: 1fr; /* Switch to single column for small screens */
+      text-align: left; /* Align text to the left for better readability */
+      padding: 5px; /* Reduce padding for compact rows */
+  }
+
+  .row span {
+      display: block; /* Ensure each data point takes up its own line */
+  }
+}

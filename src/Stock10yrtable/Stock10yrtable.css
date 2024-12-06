@@ -1,0 +1,79 @@
+.financial-table h2{
+  margin-right: 70%;
+  font-size: 20px;
+  font-family:'calibri' ;
+}
+
+.row-title-container {
+  display: flex;
+  flex-direction: column; /* Stack title and line vertically */
+  align-items: flex-start;
+ /* Align items to the left */
+}
+
+.irregular-line {
+   /* Add space between title and line */
+  width: 100px;
+  margin-left: 30px;
+  height: auto;
+}
+
+.row-title {
+  font-size: 16px; /* Adjust as needed */
+/* Optional for emphasis */
+}
+.graph-cell {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  /* Financial table header adjustments */
+  .financial-table h2 {
+    margin-right: 60%; /* Adjust margin for better alignment */
+    font-size: 18px; /* Slightly smaller font size */
+    font-family: 'calibri';
+  }
+
+  /* Row title container adjustments */
+  .row-title-container {
+    display: flex;
+    flex-direction: column; /* Stack title and line vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin-bottom: 10px; /* Add space between row-title-container and next content */
+  }
+
+  .row-title {
+    font-size: 14px; /* Adjust the font size for mobile view */
+  }
+
+  .irregular-line {
+    width: 80px; /* Slightly smaller line width for mobile */
+    margin-left: 0; /* Center the line in mobile */
+    margin-top: 5px; /* Add margin for spacing */
+    height: 2px; /* Line thickness */
+    background-color: #24b676; /* Color of the line */
+    align-self: flex-start; /* Align the line to the start of the container */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .financial-table h2 {
+    margin-right: 50%; /* Reduce margin */
+    font-size: 16px; /* Smaller font size */
+  }
+
+  .row-title-container {
+    margin-bottom: 8px; /* Reduce bottom margin */
+  }
+
+  .row-title {
+    font-size: 12px; /* Even smaller font size */
+  }
+
+  .irregular-line {
+    width: 60px; /* Even smaller line for very small screens */
+    margin-left: 0; /* Keep it centered */
+    height: 2px; /* Line thickness */
+    background-color: #24b676; /* Keep line color */
+  }
+}

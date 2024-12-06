@@ -1,0 +1,387 @@
+.subscription-container {
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'calibri';
+  
+   
+    
+  }
+  
+  .toggle-switch {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .toggle-separator {
+    margin: 0 10px;
+    color: #666;
+  }
+  
+  .plans-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+   
+  }
+  
+  .plan-card {
+    width: 58%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    /* Gradient border using border-image */
+    border: 8px solid transparent; /* Set the border size */
+    border-image: linear-gradient(90deg, #24b676, #238486) 1; /* Apply gradient to border */
+    
+    
+
+    /* Add height or min-height to increase card height */
+    height: 1100px; /* Adjust the value as needed */
+    min-height: 500px; /* For flexibility */
+}
+
+
+  
+  
+  
+  
+  .plan-header {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+  }
+  .plan-savings {
+    margin-top: 100px;
+    font-size: 14px;
+    color: #5cb85c;
+    height: 40px; /* Adjusted height for better alignment */
+    width: 220px;
+    margin-left: auto; /* Center alignment horizontally */
+    margin-right: auto; /* Center alignment horizontally */
+  
+    /* Create a gradient border */
+    background: linear-gradient(90deg, #24b676, #238486);
+    border-radius: 5px; /* Optional rounded corners */
+    padding: 2px; /* Thickness of the border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* Inner content background */
+    position: relative;
+  }
+  
+  .plan-savings::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: white; /* Inner content background */
+    border-radius: 4px; /* Match the border rounding */
+    z-index: 0;
+  }
+  
+  .plan-savings span {
+    position: relative; /* Place content above the pseudo-element */
+    z-index: 1;
+  }
+  
+  
+  
+  
+  .ribbon {
+    position: absolute;
+   
+    left: -10px;
+    background: linear-gradient(90deg, #24b676, #238486);
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 10px 20px;
+    border-radius: 0 40px 0px 0;
+    transform-origin: top left;
+    width: 320px;
+    text-align: center;
+  }
+  
+  .plan-price-section {
+    margin-top: 30px;
+  }
+  
+  
+  
+  .price-value {
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  
+  
+  .savings {
+    font-size: 14px;
+    color: #5cb85c;
+    margin: 10px 0;
+  }
+  
+  .percentage {
+    font-weight: bold;
+  }
+  
+  .pay-now-btn {
+    display: inline-block;
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #24b676, #238486);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  .pay-now-btn:hover{
+    color: white;
+    background: linear-gradient(90deg,#238486,#24b676); 
+  }
+  .plan-featuresli{
+    color: #24b676;
+  }
+ 
+  
+  .plan-footer {
+   
+    padding: 10px;
+    
+    color: #24b676;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  .ribbon-price {
+    margin-top: 5px;
+    font-size: 14px;
+   font-weight: normal;
+  }
+  
+  .ribbon-price-detail {
+    font-size: 16px;
+    color: white;
+    font-weight: normal;
+  }
+  .plan-savings .text-highlight {
+    color: #5cb85c; /* Green color for highlighted text */
+    font-weight: bold; /* Make it bold if desired */
+  }
+  
+  .plan-savings .text-black {
+    color: black; /* Ensure black color for non-highlighted parts */
+    font-weight: bold;
+   
+  }
+  .plan-featuresp{
+    color: black;
+  }
+  .plan-featuresh4{
+    margin-left: 20px;
+  }
+  .toggle-switch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .toggle-switch-container .active {
+    color: #00b074;
+    font-weight: bold;
+  }
+  
+  .toggle-switch-container .inactive {
+    color: #999;
+    font-weight: normal;
+  }
+  
+  .toggle-switch {
+    width: 50px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: #00b074;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .toggle-switch .toggle-knob {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  
+  .toggle-switch .toggle-knob.left {
+    left: 4px;
+  }
+  
+  .toggle-switch .toggle-knob.right {
+    right: 4px;
+  }
+  .subscriptionh2{
+   margin-left: 200px;
+   font-size: 24px;
+  }
+  .subscriptionh4{
+    margin-left: 100px;
+   
+    color: #24b676;
+    font-size: 17px;
+  }
+  /* General styles for mobile view */
+@media (max-width: 768px) {
+  .subscription-container {
+    width: 90%; /* Adjust container width for smaller screens */
+  }
+
+  .subscriptionh2 {
+    margin-left: 0;
+    font-size: 20px;
+    text-align: center; /* Center-align text */
+  }
+
+  .subscriptionh4 {
+    margin-left: 0;
+    font-size: 16px;
+    text-align: center; /* Center-align text */
+  }
+
+  .plans-wrapper {
+    flex-direction: column; /* Stack plans vertically */
+   
+  }
+
+  .plan-card {
+    width: 60%; /* Make cards take full width */
+    margin: 0 auto; /* Center align cards */
+    height: auto; /* Adjust height for content */
+    min-height: unset; /* Remove minimum height */
+    margin-bottom: 50px;
+  }
+
+  .plan-savings {
+    width: auto; /* Adjust width for small screens */
+  
+  }
+
+  .plan-header {
+    padding: 15px;
+    
+  }
+
+  .pay-now-btn {
+    width: 90%; /* Adjust button width */
+    font-size: 14px;
+  }
+
+  .toggle-switch-container {
+    flex-direction: row; /* Stack toggle options */
+    gap: 5px;
+  }
+
+  .toggle-switch {
+    margin-top: 10px;
+  }
+
+  .toggle-switch .toggle-knob {
+    width: 18px;
+    height: 18px;
+  }
+  .ribbon {
+    font-size: 16px; /* Smaller font size */
+    padding: 8px 15px; /* Adjust padding */
+    width: 240px; /* Narrower ribbon */
+    
+   
+  }
+
+  .ribbon-price {
+    font-size: 12px; /* Smaller font size for details */
+    margin-top: 3px; /* Adjust spacing */
+  }
+
+  .ribbon-price-detail {
+    font-size: 14px; /* Adjust size for better readability */
+  }
+}
+
+
+/* Additional styles for smaller screens (480px and below) */
+@media (max-width: 480px) {
+  .subscription-container {
+    width: 100%; /* Take full width on small screens */
+  }
+
+  .subscriptionh2, .subscriptionh4 {
+    font-size: 18px; /* Adjust font size for small screens */
+  }
+
+  .plan-card {
+    padding: 10px; /* Reduce padding */
+    height: auto; /* Allow flexible height */
+    width: 60%;
+  }
+
+  .plan-savings {
+    font-size: 12px; /* Adjust font size */
+    padding: 1px; /* Reduce padding */
+  }
+
+  .pay-now-btn {
+    font-size: 12px; /* Smaller text size for buttons */
+   
+  }
+
+  .plan-featuresh4, .plan-featuresli, .plan-featuresp {
+    font-size: 14px; /* Adjust feature text size */
+  }
+
+  .toggle-switch-container {
+    font-size: 14px; /* Adjust toggle text size */
+  }
+
+  .toggle-switch {
+    width: 40px; /* Adjust toggle size */
+    height: 20px;
+  }
+
+  .toggle-switch .toggle-knob {
+    width: 16px;
+    height: 16px;
+  }
+  .ribbon {
+    font-size: 14px; /* Further reduce font size */
+    padding: 6px 12px; /* Compact padding */
+    width: 200px; /* Make ribbon even smaller */
+   
+  
+  }
+
+  .ribbon-price {
+    font-size: 10px; /* Smaller font size for ribbon price */
+    margin-top: 2px; /* Adjust spacing */
+  }
+
+  .ribbon-price-detail {
+    font-size: 12px; /* Smaller font size for details */
+  }
+}

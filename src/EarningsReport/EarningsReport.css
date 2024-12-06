@@ -1,0 +1,240 @@
+.earnings-report {
+  padding: 20px;
+  font-family: 'calibri';
+}
+.earningheader{
+  margin-top:80px ;
+align-items: left;
+color:#24b676;
+font-size: 26px;
+margin-left: 30px;
+
+}
+.earnings-report a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+.earningpara{
+  color: #666;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  
+}
+.earnings-table {
+  width: 100%; /* Set the table width to 80% for a narrower layout */
+  margin: 20px auto; /* Center the table */
+  border-collapse: collapse;
+  border-radius: 10px; /* Rounded corners for the table */
+  overflow: hidden; /* Ensures rounded corners are visible */
+  margin-bottom: 100px;
+}
+.shareholding-history table {
+  width: 90%;
+  border-collapse: collapse;
+  border-radius: 10px; /* Rounded corners for the table container */
+}
+
+/* Apply border radius to the container holding the table */
+.shareholding-history {
+  border-radius: 10px; /* Curved box around the table */
+  overflow: hidden;  /* Ensures child elements follow the rounded corners */
+}
+
+.earnings-table th,
+.earnings-table td,
+.shareholding-history th,
+.shareholding-history td {
+  padding: 12px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  /* Remove left and right borders by default */
+  border-left: none;
+  border-right: none;
+}
+
+/* Remove vertical borders (left and right) */
+.earnings-table th,
+.earnings-table td,
+.shareholding-history th,
+.shareholding-history td {
+  border-left: none;
+  border-right: none;
+}
+
+/* Apply border radius to first and last th in shareholding history */
+.shareholding-history th:first-child {
+  border-top-left-radius: 10px; /* Rounded top-left corner */
+}
+
+.shareholding-history th:last-child {
+  border-top-right-radius: 10px; /* Rounded top-right corner */
+}
+
+.earnings-table th:first-child,
+.earnings-table td :first-child {
+  border-top-left-radius: 10px;
+  border-left: 1px solid #ddd;
+}
+
+.earnings-table th,
+.shareholding-history th {
+  background-color: #1dbf73;
+  color: white;
+  font-weight: bold;
+}
+
+/* Styling for shareholding section */
+.shareholding-section {
+  display: flex;
+  gap: 20px;
+}
+
+.shareholding-chart {
+  width: 50%;
+  text-align: center;
+}
+
+.shareholding-legend {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.shareholding-legend div {
+  display: flex;
+  align-items: center;
+  margin: 2px 0;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.promoters {
+  background-color: blue;
+}
+.foreign-institutions {
+  background-color: red;
+}
+.dii {
+  background-color: yellow;
+}
+.retail-others {
+  background-color: green;
+}
+.positive-value {
+  color: green;
+  font-weight: bold;
+}
+
+.negative-value {
+  color: red;
+  font-weight: bold;
+}
+
+/* Mobile View for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .earnings-report h2 {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+    font-size: 1.25rem; /* Adjust font size */
+  }
+
+  .earnings-report p {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .earnings-table,
+  .shareholding-history table {
+    width: 100%; /* Make table take full width */
+  }
+
+  .earnings-table th,
+  .earnings-table td,
+  .shareholding-history th,
+  .shareholding-history td {
+    padding: 8px; /* Reduced padding */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .earnings-table th:first-child,
+  .earnings-table td:first-child {
+    padding-left: 10px; /* Adjust padding */
+  }
+
+  .shareholding-section {
+    flex-direction: column; /* Stack shareholding section items vertically */
+    align-items: center; /* Center content */
+  }
+  .shareholding-history{
+margin-bottom: 40px;
+  }
+  .shareholding-chart {
+    width: 100%; /* Make chart container take full width */
+    margin-bottom: 20px; /* Add margin between chart and legend */
+  }
+
+  .shareholding-legend {
+    font-size: 12px; /* Smaller font size */
+    text-align: center; /* Center the legend */
+  }
+
+  .legend-color {
+    width: 8px; /* Smaller legend colors */
+    height: 8px;
+    margin-right: 3px;
+  }
+}
+
+/* Mobile View for Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .earnings-report h2 {
+   
+    font-size: 1rem; /* Smaller font size */
+  }
+
+  .earnings-report p {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .earnings-table,
+  .shareholding-history table {
+    width: 100%; /* Full width */
+  }
+
+  .earnings-table th,
+  .earnings-table td,
+  .shareholding-history th,
+  .shareholding-history td {
+    padding: 6px; /* Smaller padding */
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .shareholding-section {
+    flex-direction: column; /* Stack shareholding section items vertically */
+    gap: 10px; /* Reduced gap */
+   
+  }
+
+  .shareholding-chart {
+    width: 100%; /* Full width for chart */
+  }
+
+  .shareholding-legend {
+    font-size: 10px; /* Smaller font size */
+  }
+
+  .legend-color {
+    width: 6px; /* Smaller legend colors */
+    height: 6px;
+    margin-right: 3px;
+  }
+}

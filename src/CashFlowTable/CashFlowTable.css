@@ -1,0 +1,178 @@
+.cash-flow-table {
+    padding: 20px;
+    font-family: 'Calibri';
+    margin: 20px;
+  }
+  
+  .cashpara{
+    color: #666;
+  margin-left: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  
+  }
+.cashhead{
+  margin-top:80px ;
+align-items: left;
+color:#24b676;
+font-size: 26px;
+margin-left: 50px;
+
+
+}
+  
+  .cash-flow-table a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .cash-flow-table table {
+    width: 100%; /* Set table width to 90% for centered and responsive layout */
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse;
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensures rounded corners are visible */
+    
+  }
+  
+  .cash-flow-table th, .cash-flow-table td {
+    padding: 12px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: none;
+    border-right: none;
+  }
+  
+  /* Left border for the first column */
+  .cash-flow-table th:first-child, .cash-flow-table td:first-child {
+    border-left: 1px solid #ddd;
+  }
+  
+  /* Right border for the last column */
+  .cash-flow-table th:last-child, .cash-flow-table td:last-child {
+    border-right: 1px solid #ddd;
+  }
+  
+  .cash-flow-table thead {
+    background-color: #00a65a;
+    color: #fff;
+  }
+  
+  .cash-flow-table tbody tr:not(.subcategory-row):nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .cash-flow-table th, .cash-flow-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Expandable row styling */
+  .cash-flow-table td.expandable {
+    display: flex;
+    align-items: center;
+  }
+  
+  .plus-icon {
+    cursor: pointer;
+    font-weight: bold;
+    color: #24b676;
+    margin-left: 8px;
+  }
+  
+  /* Subcategory row styling */
+  .subcategory-row {
+    background-color: #f0f0f0; /* Light grey background for subcategories */
+  }
+  .bold-row td{
+    font-weight: bold;
+  }
+  /* Mobile View for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .cash-flow-table h2 {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+    font-size: 1.3em; /* Adjust font size for tablets */
+  }
+
+  .cash-flow-table p {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+    font-size: 14px; /* Reduce font size for tablets */
+  }
+
+  .cash-flow-table table {
+    width: 100%; /* Full width for tables */
+    margin: 10px auto; /* Adjust margin for smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .cash-flow-table th, .cash-flow-table td {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .cash-flow-table th {
+    font-size: 14px; /* Adjust font size for headers */
+  }
+
+  .cash-flow-table td {
+    font-size: 13px; /* Adjust font size for table data */
+  }
+
+  .cash-flow-table td.expandable {
+    font-size: 12px; /* Adjust expandable text size */
+  }
+
+  .plus-icon {
+    font-size: 14px; /* Adjust font size for toggle icon */
+  }
+  
+  /* Adjust spacing for subcategory rows */
+  .subcategory-row {
+    font-size: 12px; /* Adjust font size for subcategory rows */
+  }
+}
+
+/* Mobile View for very small devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .cash-flow-table h2 {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+    font-size: 1.1em; /* Further reduce font size */
+  }
+
+  .cash-flow-table p {
+    margin-left: 10px; /* Adjust margin */
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+
+  .cash-flow-table table {
+    width: 100%; /* Full width for tables */
+    margin: 10px auto; /* Center the table */
+  }
+
+  .cash-flow-table th, .cash-flow-table td {
+    padding: 8px; /* Reduce padding for mobile screens */
+  }
+
+  .cash-flow-table th {
+    font-size: 12px; /* Smaller font size for headers */
+  }
+
+  .cash-flow-table td {
+    font-size: 11px; /* Smaller font size for table data */
+  }
+
+  .cash-flow-table td.expandable {
+    font-size: 11px; /* Smaller font size for expandable text */
+  }
+
+  .plus-icon {
+    font-size: 12px; /* Adjust font size for toggle icon */
+  }
+  
+  /* Adjust spacing for subcategory rows */
+  .subcategory-row {
+    font-size: 11px; /* Further reduce font size for subcategory rows */
+  }
+}

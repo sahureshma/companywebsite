@@ -1,0 +1,148 @@
+.ratio-table {
+    padding: 20px;
+    font-family: 'Calibri';
+    margin: 20px;
+}
+
+
+
+
+.ratio-table a {
+    color: black;
+    text-decoration: none;
+}
+.ratioheader{
+margin-top:80px ;
+align-items: left;
+color:#24b676;
+font-size: 26px;
+margin-left: 50px;
+
+
+}
+.ratiopara{
+color: #666;
+margin-left: 50px;
+font-weight: bold;
+font-size: 16px;
+}
+.ratio-table table {
+    width: 100%; /* Set the table width to 90% for a centered and responsive layout */
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse;
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensures rounded corners are visible */
+}
+
+.ratio-table th,
+.ratio-table td {
+    padding: 12px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    /* Remove left and right borders by default */
+    border-left: none;
+    border-right: none;
+}
+
+.ratio-table th {
+    background-color: #00a65a;
+    color: #fff;
+}
+
+.ratio-table th:last-child, .ratio-table td:last-child {
+    border-right: 1px solid #ddd;
+}
+
+.ratio-table tbody td:first-child {
+    border-top-left-radius: 10px;
+}
+
+/* Add left border to the first column for both th and td */
+.ratio-table th:first-child,
+.ratio-table td:first-child {
+    border-left: 1px solid #ddd; /* Left border for the first column */
+    text-align: left;
+}
+
+.balance-sheet thead {
+    background-color: #00a65a;
+    color: #fff;
+}
+
+.ratio-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.ratio-table td:first-child {
+    text-align: left;
+}
+/* Mobile View for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .ratio-table h2 {
+      margin-left: 20px; /* Adjust margin for smaller screens */
+      font-size: 1.3em; /* Reduce font size for tablets */
+    }
+  
+    .ratio-table p {
+      margin-left: 20px; /* Adjust margin for smaller screens */
+      font-size: 14px; /* Reduce font size for tablets */
+    }
+  
+    .ratio-table table {
+      width: 100%; /* Full width for tables on smaller screens */
+      margin: 10px auto; /* Adjust margin for smaller screens */
+      margin-bottom: 20px;
+    }
+  
+    .ratio-table th, .ratio-table td {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .ratio-table th {
+      font-size: 14px; /* Adjust font size for headers */
+    }
+  
+    .ratio-table td {
+      font-size: 13px; /* Adjust font size for table data */
+    }
+  
+    .ratio-table td:first-child {
+      font-size: 12px; /* Adjust font size for the first column */
+    }
+  }
+  
+  /* Mobile View for Very Small Devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    .ratio-table h2 {
+      margin-left: 10px; /* Adjust margin for very small screens */
+      font-size: 1.1em; /* Further reduce font size */
+    }
+  
+    .ratio-table p {
+      margin-left: 10px; /* Adjust margin for very small screens */
+      font-size: 12px; /* Further reduce font size */
+    }
+  
+    .ratio-table table {
+      width: 100%; /* Full width for tables on very small screens */
+      margin: 10px auto; /* Adjust margin for smaller screens */
+     
+    }
+  
+    .ratio-table th, .ratio-table td {
+      padding: 8px; /* Reduce padding for very small screens */
+    }
+  
+    .ratio-table th {
+      font-size: 12px; /* Smaller font size for headers */
+    }
+  
+    .ratio-table td {
+      font-size: 11px; /* Smaller font size for table data */
+    }
+  
+    .ratio-table td:first-child {
+      font-size: 10px; /* Adjust font size for the first column */
+    }
+  }

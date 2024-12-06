@@ -1,0 +1,228 @@
+.dashboard-container {
+  display: flex;
+  padding: 10px;
+  font-family: Calibri, Arial, sans-serif;
+  background-color: white;
+}
+
+.box {
+  width: 310px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed, changed from 290% */
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Spread content vertically */
+  margin-top: -90px;
+  margin-left: 20px;
+  gap: 10px; /* Adjust spacing between elements inside the box */
+}
+
+.assest-box {
+  width: 250px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed, changed from 290% */
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Spread content vertically */
+  margin-top: -90px;
+  gap: 10px; /* Adjust spacing between elements inside the box */
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+/* Pie chart and section alignment */
+.pie-chart {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pie-section {
+  position: absolute;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.stocks {
+  width: 80px;
+  height: 80px;
+  background-color: #092c4b;
+  top: 15%;
+  left: 20%;
+}
+
+.mutual-fund {
+  width: 53px;
+  height: 53px;
+  background-color: #24b676;
+  top: 20%;
+  left: -10%;
+}
+
+.gold {
+  width: 35px;
+  height: 35px;
+  background-color: #056e41;
+  top: 60%; /* Position below mutual fund */
+  left: 10%;
+}
+
+/* Align assets list and items neatly */
+.assets-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Spread items evenly */
+  gap: 8px;
+}
+
+.asset-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  align-items: center;
+}
+
+/* Legend circles for assets */
+.legend-circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.stocks.legend-circle {
+  background-color: #092c4b;
+}
+
+.mutual-fund.legend-circle {
+  background-color: #24b676;
+}
+
+.gold.legend-circle {
+  background-color: #056e41;
+}
+
+/* Investment details with icons */
+.investment-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.investment-label {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+
+.gain-icon {
+  background-color: #4CAF50;
+}
+
+.loss-icon {
+  background-color: #FF5252;
+}
+
+.returns-icon {
+  background-color: #80CBC4;
+}
+
+.net-worth-icon {
+  background-color: #9E9E9E;
+}
+/* Mobile View: Screen Width <= 768px */
+
+
+@media (max-width: 480px) {
+  .box {
+    width: 310px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed, changed from 290% */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spread content vertically */
+    margin-top: 20px;
+    margin-left: 20px;
+    gap: 10px; /* Adjust spacing between elements inside the box */
+  }
+  
+  .assest-box {
+    width: 250px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed, changed from 290% */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spread content vertically */
+    margin-top: 20px;
+    gap: 10px; /* Adjust spacing between elements inside the box */
+  }
+  .pie-chart {
+    position: relative;
+    width: 90px;
+    height: 200px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pie-section {
+    position: absolute;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+}

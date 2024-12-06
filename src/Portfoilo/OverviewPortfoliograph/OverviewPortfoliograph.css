@@ -1,0 +1,163 @@
+.portfolio-manager-container {
+    font-family: 'calibri';
+    
+  }
+  
+  .portfolio-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-tab {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .portfolio-tab.active {
+    background-color: #00b894;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .portfolio-market-data {
+    display: flex;
+    justify-content: space-between;
+
+
+  }
+  
+  .portfolio-market-data-card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .portfolio-market-data-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .portfolio-market-data-card li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  
+  .portfolio-intraday-chart {
+    flex: 2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .portfolio-chart-placeholder {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    border: 1px dashed #ccc;
+  }
+  
+  .portfolio-footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .portfolio-summary p {
+    margin: 5px 0;
+  }
+  
+  .portfolio-note {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666;
+    color: rgb(136, 199, 167);
+  }
+  
+  .market-data-container {
+    width: 250%;
+    max-width: 450px;
+    box-shadow: 0 2px 5px rgb(127, 171, 225);;
+border: 1px solid rgb(127, 171, 225);
+    border-radius: 5px;
+    font-family: 'calibri';
+    background-color: #fff;
+    overflow: hidden;
+   margin-left: 160px;
+    height: 400px;
+    
+  }
+  .portheadmanager{
+    margin-bottom:90px ;
+  }
+  .market-data-header {
+    background-color: #24b676;
+    color: #fff;
+    text-align: center;
+   padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    height: 25px;
+    ;
+  }
+  
+  .market-data-content {
+    padding: 10px;
+    width: 300px;
+  }
+  
+  .market-data-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 16px;
+    margin-left: 50px;
+  }
+  
+  .market-data-row:last-child {
+    border-bottom: none;
+    
+  }
+  
+  .highlight-red {
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .chart-containerportfolio{
+
+width: 600px;
+height: 400px;
+margin-right: 160px;
+box-shadow: 0 2px 5px rgb(127, 171, 225);;
+border: 1px solid rgb(127, 171, 225);
+  }
+ 
+.tabsportfolio {
+  display: flex;
+ 
+margin-left: 90px;
+}
+
+.tabportfolio {
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+.tabportfolio:hover {
+    background-color: #24b676; /* Color when hovered */
+    color: white;
+  
+}

@@ -1,0 +1,213 @@
+
+.myAccounts-container {
+    font-family: 'Calibri', Arial, sans-serif;
+    background-color: #ffffff;
+    border: 3px solid #a79a9a;
+    border-radius: 8px;
+    padding: 16px;
+    width: 85%; /* Set container width to 80% of the viewport width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-left: 130px;
+  }
+  
+  .myAccounts-header {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  
+  .myAccounts-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+  }
+  
+  .myAccounts-filters {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+    color: black;
+  }
+  
+  .filter-option {
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0 8px; /* Add some padding for better spacing */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effect */
+  }
+  
+  /* Add borders only between the middle filter options */
+  .filter-option:not(:first-child) {
+    border-left: 1px solid #ddd; /* Add border between filters */
+    padding-left: 8px; /* Optional padding for spacing */
+  }
+  
+  /* Hover effect */
+  .filter-option:hover {
+    background-color: #24b676; /* Set background color to green on hover */
+    color: white; /* Set text color to white on hover */
+  }
+  
+  
+  .filter-option.active {
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Buttons and Group By Container */
+  .myAccounts-buttons-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align to the right */
+    gap: 12px; /* Spacing between buttons and Group By */
+  }
+  
+  .myAccounts-buttons {
+    display: flex;
+    gap: 8px; /* Add spacing between buttons */
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+  
+  .add-transaction-btn,
+  .my-alerts-btn {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .add-transaction-btn:hover,
+  .my-alerts-btn:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Group By Options Styling */
+  .group-by-options {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #666;
+    margin-right: 40px;
+    margin-top: 10px;
+  
+  }
+  
+  .group-by-options span {
+    font-weight: bold;
+    color: #333;
+  
+  }
+  
+  .group-by-options label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: black;
+  
+  }
+  .group-by-options input[type="radio"] {
+    appearance: none; /* Remove default styling */
+    width: 14px;
+    height: 14px;
+    border: 1px solid black; /* Outer border color */
+    border-radius: 50%; /* Make it circular */
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+  }
+  .group-by-options input[type="radio"]:checked {
+    
+    background-color: #24b676; /* Inner circle green when checked */
+  }
+  
+  
+  
+  /* Table Styles */
+  .myAccounts-table {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    
+    width: 100%;
+  }
+  
+  .table-header {
+    display: flex;
+    background-color:#24b676;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 0;
+  }
+  
+  .table-body .table-row {
+    display: flex;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd; /* Horizontal border between rows */
+  }
+  
+  /* Removing border from the last row */
+  .table-body .table-row:last-child {
+    border-bottom: none;
+  }
+  
+  /* Vertical borders only on the first and last cells */
+  .table-cell {
+    flex: 1;
+    padding: 8px;
+    /* Remove border-right for all cells except the last one */
+    border-right: none;
+  }
+  .table-cells {
+    flex: 1;
+    padding: 8px;
+    /* Remove border-right for all cells except the last one */
+    border-right: none;
+    color: green;
+  }
+  .tablecell {
+    flex: 1;
+    padding: 8px;
+    /* Remove border-right for all cells except the last one */
+    border-right: none;
+    color: red;
+  }
+  .table-cell:first-child {
+    border-left: 1px solid #ddd; /* Left vertical border */
+  }
+  
+  .table-cell:last-child {
+    border-right: 1px solid #ddd; /* Right vertical border */
+  }
+  
+  /* Footer */
+  .myAccounts-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Note Section */
+  .myAccounts-note {
+    font-size: 15px;
+    color: black;
+    margin-top: 8px;
+    line-height: 1.5;
+  }
+  .notepara{
+    font-size: 14px;
+    color: black;
+  }

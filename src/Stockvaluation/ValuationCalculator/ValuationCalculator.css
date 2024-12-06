@@ -1,0 +1,209 @@
+/* Container styling */
+.valuationContainer {
+  margin-top: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Calibri';
+  max-height: 400px;
+  border: 1px solid rgb(214, 212, 212);
+  box-shadow: 4px 4px 10px  -4px -4px 5px rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+
+}
+
+
+/* Row Styling */
+.valuationRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px; /* Adds space between columns */
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.valuationHead {
+  font-size: 25px;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-family: 'Calibri';
+  font-weight: bold;
+  color:#24b676;
+  margin-top:80px ;
+  margin-bottom: 50px;
+}
+
+/* Column Styling */
+.valuationColumn {
+  display: flex;
+  flex-direction: column;
+ gap: 10px;
+  width: 48%;
+  /* Each column takes 48% of the row's width */
+}
+
+/* Button Styling */
+.buttonSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adds space between the buttons */
+}
+
+.baseValueButton, .myValuationButton {
+  padding: 12px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+ 
+  border: 2px solid #24b676 ;
+  cursor: pointer;
+}
+
+/* Base Value Button Styling */
+.baseValueButton {
+  background-color:white;
+  color: #24b676;
+}
+
+.baseValueButton:hover {
+  background-color: #24b676;
+  color: white;
+}
+
+/* My Valuation Button Styling */
+.myValuationButton {
+  background-color: white;
+  color: #24b676;
+}
+
+.myValuationButton:hover {
+  background-color: #24b676;
+  color: white;
+}
+
+/* Text Field Styling */
+.inputSection .MuiTextField-root {
+  width: 50%;
+ 
+ 
+}
+.inputField {
+  width: 30px;
+  float: right;
+ 
+}
+
+
+/* Save Button Styling */
+.saveButton {
+width: 182px;
+height: 40px;
+color: white;
+ background-color:#24b676 ;
+ margin-top: 20px;
+margin-bottom: 100px;
+
+}
+
+/* Slider mark styling */
+.MuiSlider-markLabel {
+  color:#24b676 ; /* Same green color as the buttons */
+  font-weight: bold;
+  font-family: 'Calibri';
+   /* Same green color as the buttons */
+   ;
+}
+
+/* Adjust mark label positioning */
+.MuiSlider-markLabel[data-index="0"] {
+  transform: translateX(-15%);
+}
+
+.MuiSlider-markLabel[data-index="1"] {
+  transform: translateX(-10%);
+}
+@media (max-width: 768px) {
+  /* Adjust container width */
+  .valuationContainer {
+    max-width: 100%; /* Make container width 100% on smaller screens */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .valuationRow {
+    flex-direction: column; /* Stack the columns vertically */
+    margin-left: 0; /* Remove left margin */
+    gap: 20px; /* Reduce gap between rows */
+  }
+
+  .valuationHead {
+    font-size: 18px; /* Adjust font size for header */
+    margin-left: 0; /* Adjust left margin */
+    text-align: center; /* Center the header */
+  }
+
+  .valuationColumn {
+    width: 100%; /* Columns take full width */
+  }
+
+  .buttonSection {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Reduce gap between buttons */
+  }
+
+  .baseValueButton, .myValuationButton {
+    width: 100%; /* Make buttons full width */
+    padding: 10px 0; /* Adjust padding */
+  }
+
+  .inputSection .MuiTextField-root {
+    width: 100%; /* Make text field full width */
+  }
+
+  .saveButton {
+    width: 100%; /* Make save button full width */
+    margin-top: 20px;
+  }
+}
+
+/* Mobile View for Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  /* Adjust container width */
+  .valuationContainer {
+    max-width: 200%; /* Make container width 100% on smaller screens */
+    padding: 19px; /* Reduce padding */
+  }
+
+  .valuationRow {
+    flex-direction: column; /* Stack the columns vertically */
+    margin-left: 0; /* Remove left margin */
+    gap: 15px; /* Reduce gap between rows */
+  }
+
+  .valuationHead {
+    font-size: 16px; /* Further reduce font size for header */
+    margin-left: 0; /* Adjust left margin */
+    text-align: center; /* Center the header */
+  }
+
+  .valuationColumn {
+    width: 100%; /* Columns take full width */
+  }
+
+  .buttonSection {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 5px; /* Reduce gap between buttons */
+  }
+
+  .baseValueButton, .myValuationButton {
+    width: 100%; /* Make buttons full width */
+    padding: 8px 0; /* Adjust padding */
+  }
+
+  .inputSection .MuiTextField-root {
+    width: 100%; /* Make text field full width */
+  }
+
+  .saveButton {
+    width: 100%; /* Make save button full width */
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,403 @@
+/* Parent Dropdown Styling */
+.portfolio-dropdown {
+  position: relative; /* Makes the dropdown position relative to this element */
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  position: absolute; /* Position relative to the parent */
+  top: 100%; /* Place the dropdown directly below the parent */
+  left: 0; /* Align the dropdown with the parent’s left edge */
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 250px; /* Adjust the width as needed */
+  z-index: 10;
+  padding: 10px 0;
+  display: none; /* Default state: hidden */
+}
+
+/* Show Dropdown on Hover or Focus */
+.portfolio-dropdown:hover .dropdown-menu,
+.portfolio-dropdown:focus-within .dropdown-menu {
+  display: block; /* Make dropdown visible */
+}
+
+/* Dropdown Items */
+.dropdown-item {
+  padding: 10px 15px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.dropdown-item p {
+  font-size: 12px;
+  color: #777;
+  margin: 5px 0 0;
+}
+
+/* Dropdown Items */
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: 'Calibri', sans-serif;
+  position: fixed; /* Fix the navbar to the top */
+  top: 0; /* Align it to the top of the viewport */
+  left: 0; /* Align it to the left */
+  right: 0; /* Align it to the right */
+  z-index: 1000;
+}
+
+/* Stock dropdown menu */
+.stockmenu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 100%; /* Position it just below the menu */
+  left: 50%; /* Align it relative to the "Stocks" button */
+  transform: translateX(-50%); /* Center align */
+  z-index: 10;
+  padding: 15px;
+  width: 550px; /* Adjust dropdown width */
+  gap: 20px;
+ 
+}
+.stockmenu::before {
+  content: ""; /* Empty content for the line */
+  position: absolute;
+  height: 85%; /* Adjust line height */
+  width: 1px; /* Thickness of the line */
+  background: #ddd; /* Line color */
+  top: 7.5%; /* Center vertically */
+  left: 50%; /* Place in the middle of the menu */
+  transform: translateX(-50%);
+}
+/* Dropdown Columns */
+.stockmenu-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stockmenu-column ul li {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.stockmenu-column ul li:hover {
+  color:#0066cc;
+}
+
+/* Chevron Icon */
+.chevron-icon {
+  margin-left: 5px;
+  color: black;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+/* Logo styling */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 220px; /* Increased logo width */
+  height: auto; /* Keeps aspect ratio */
+  margin-right: 8px;
+}
+
+/* Navigation links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  font-weight: bolder;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1.2rem;
+}
+
+.navbar-links a:hover {
+  color: #0066cc;
+}
+
+/* Search bar */
+.navbar-search {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-search input {
+  padding: 6px 12px 6px 30px; /* Add padding to make space for the icon */
+  border-radius: 15px;
+  border: 1px solid #cccccc;
+  font-size: 14px;
+  width: 300px; /* Adjust as needed */
+  height: 23px;
+}
+
+/* Search icon */
+.search-icon {
+  position: absolute;
+  left: 10px; /* Position on the left side inside input */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #cccccc;
+  font-size: 14px; /* Adjust icon size */
+}
+
+/* Icons section */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-section span {
+  margin-left: 8px;
+  font-size: 16px;
+  color: #333333;
+}
+
+/* Dropdown menu for user profile */
+.dropdown-menu {
+  position: absolute; /* Position the dropdown below the icon */
+  right: 0; /* Align to the right */
+  top: 100%; /* Position it just below the icon */
+  background-color: white; /* Background color for dropdown */
+  border: 1px solid #ddd; /* Border for dropdown */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  list-style: none; /* Remove default list styles */
+  padding: 15px 0; /* Increased vertical spacing */
+  margin: 0; /* Remove margin */
+  z-index: 1000; /* Ensure dropdown appears above other elements */
+  min-width: 160px; /* Set a minimum width for the dropdown */
+}
+
+/* Dropdown items */
+.dropdown-menu li {
+  display: flex; /* Use flex to align icon and text */
+  align-items: center;
+  padding: 12px 16px; /* Increased spacing for dropdown items */
+  font-size: 16px; /* Increase font size for better readability */
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0; /* Change background on hover */
+}
+
+.dropdown-menu a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Link color */
+  display: block; /* Make the entire area clickable */
+}
+
+/* Icon in dropdown menu */
+.dropdown-icon {
+  margin-right: 8px; /* Space between icon and text */
+  font-size: 25px; /* Adjust icon size */
+  color: #333; /* Icon color */
+}
+/* Footer styling for navbar links on mobile */
+.footer-nav {
+  display: none; /* Hide footer navbar by default */
+  position: fixed; /* Fix it to the bottom */
+  bottom: 0; /* Align to the bottom of the viewport */
+  left: 0;
+  right: 0;
+  justify-content: center;
+  gap: 20px;
+  font-weight: bolder;
+  list-style: none;
+  padding: 10px;
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1rem;
+}
+
+.footer-nav a:hover {
+  color: #0066cc;
+}
+
+
+.footer-nav a:hover {
+  color: #0066cc;
+}
+
+
+@media (max-width: 768px) {
+  /* Show navbar logo, and dropdown icon on mobile */
+  .navbar-logo,
+  .navbar-icons,
+  .profile-section {
+    display: flex;
+  }
+
+  /* Hide main navbar links in mobile view */
+  .navbar-links {
+    display: none;
+  }
+
+  .footer-nav {
+    display: flex;
+  }
+
+  /* Hide search input on mobile */
+  .navbar-search {
+    display: none;
+  }
+
+  /* Adjust profile section layout */
+  .profile-section span {
+    font-size: 14px;
+  }
+
+  /* Adjust logo size */
+  .logo-image {
+    width: 180px;
+  }
+  /* Stock dropdown menu */
+  .stockmenu {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    left: 0; /* Align to the left side */
+   
+    height: 200vh;/* Full width on mobile */
+    gap: 10px;
+    transform: translateY(-50%);
+  }
+  
+  /* Styling for the divider line */
+  .stockmenu::before {
+    content: ""; /* Empty content for the line */
+   background: #ddd; /* Line color */
+}
+  
+  /* Dropdown Column Styling */
+  
+  
+  
+  /* Chevron Icon */
+  .chevron-icon {
+    margin-left: 5px;
+    color: black;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+  }
+
+  /* Dropdown menu for user profile */
+  .dropdown-menu {
+    position: static; /* Allow dropdown to flow naturally */
+    box-shadow: none; /* Remove shadow for simplicity */
+    width: 100%; /* Use full width */
+    margin-top: 10px; /* Add spacing above */
+  }
+
+  .dropdown-menu li {
+    font-size: 14px; /* Reduce font size */
+    padding: 10px 12px; /* Adjust padding */
+  }
+
+  .dropdown-icon {
+    font-size: 20px; /* Adjust icon size */
+  }
+}
+/* Additional styles for 480px and below */
+@media (max-width: 480px) {
+  /* Adjust logo size for smaller screens */
+  .logo-image {
+    width: 150px; /* Reduce logo size */
+  }
+
+  /* Adjust navbar logo size */
+  .navbar-logo {
+    font-size: 16px; /* Smaller font size */
+  }
+
+  /* Adjust profile section layout */
+  .profile-section span {
+    font-size: 12px; /* Smaller font size */
+  }
+
+  /* Adjust navbar icons */
+  .navbar-icons {
+    font-size: 14px; /* Smaller icons */
+  }
+
+  /* Stock dropdown menu adjustments */
+  .stockmenu {
+    width: 800%;
+    height: 200vh;
+    left: 0;
+    transform: translateY(-30%);
+    gap: 5px;
+  }
+
+  /* Dropdown menu adjustments */
+  .dropdown-menu li {
+    font-size: 12px; /* Smaller font size for dropdown */
+    padding: 8px 10px; /* Reduce padding */
+  }
+
+  /* Adjust button and icon sizes */
+  .dropdown-icon {
+    font-size: 18px; /* Smaller icon size */
+  }
+
+  .chevron-icon {
+    font-size: 12px; /* Smaller chevron icon */
+  }
+
+  /* Adjust footer nav layout */
+  .footer-nav {
+    font-size: 12px; /* Smaller font size for footer items */
+    background-color: white;
+    margin-left: 180px;
+      
+    }
+  }

@@ -1,0 +1,137 @@
+/* StockTable Styling */
+.stock-table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+ 
+  .top-gainers-losers {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .top-gainers, .top-losers {
+    width: 45%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .top-gainers h3, .top-losers h3 {
+    font-size: 16px;
+    color: #0073e6;
+    margin-bottom: 10px;
+  }
+  
+  .top-gainers table, .top-losers table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  
+  .top-gainers th, .top-losers th, .top-gainers td, .top-losers td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Rest of your existing CSS remains unchanged */
+  .positive {
+    color: green;
+  }
+  
+  .negative {
+    color: red;
+  }
+  /* Ensure the table has horizontal scrolling on small screens */
+/* Ensure the table has horizontal scrolling on small screens */
+@media (max-width: 768px) {
+  .stock-table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+    display: block; /* Prevent layout issues */
+  }
+
+  .stock-table {
+    min-width: 600px; /* Ensure table has a minimum width for scrolling */
+    width: auto; /* Allow table to extend beyond container */
+    border-collapse: collapse;
+  }
+
+  .stock-table th, .stock-table td {
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  .filters {
+    flex-wrap: wrap; /* Wrap filter elements for better use of space */
+  }
+
+  .filters span {
+    flex: 0 0 100%; /* Make labels take full width */
+    margin-bottom: 8px; /* Add spacing below labels */
+  }
+
+  .filter-button {
+    padding: 10px; /* Increase padding for touch screens */
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .header h2 {
+    font-size: 18px;
+    margin-top: 70px;
+    
+  }
+
+  .header p {
+    font-size: 14px;
+  }
+
+  .filters {
+    gap: 8px;
+  }
+
+  .filter-button {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .show-more-button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .dropdown-menu {
+    max-width: 300px;
+  }
+
+  .dropdown-menu label {
+    font-size: 12px;
+  }
+
+  .dropdown-actions button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .stock-table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+    max-width: 100%; /* Ensure the container doesn't exceed screen size */
+    margin: 0 auto; /* Center the container */
+  }
+
+  .stock-table {
+    min-width: 600px; /* Minimum width for table */
+    width: auto; /* Allow table to stretch */
+    
+  }
+
+  .stock-table th, .stock-table td {
+    font-size: 10px;
+    padding: 6px;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+}

@@ -1,0 +1,266 @@
+.transaction-form {
+  padding: 20px;
+  font-family: 'calibri';
+}
+
+.addcontainer {
+  margin-top: 50px;
+}
+
+.tabsadd {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.tabadd {
+  padding: 6px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid grey;
+  box-shadow: 4px 4px 10px 0 rgba(122, 120, 120, 0.973);
+}
+
+.tabadd:hover {
+  background-color: #24b676;
+  color: white;
+}
+
+.transaction-row {
+  display: flex;
+  flex-wrap: wrap; /* Enables wrapping to the next line */
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.transaction-row label {
+  flex: 1 1 calc(16.66% - 10px); /* Six elements per row */
+  min-width: 120px; /* Ensures labels have enough width */
+  margin-top: 20px;
+  text-align: left;
+}
+
+input,
+select {
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  width: 90%; /* Makes inputs take full width of their label container */
+  box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.transaction-row-wrapper {
+  margin-bottom: 20px;
+  background-color: rgb(248, 241, 241);
+  height: auto; /* Allows the height to adjust based on content */
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px; /* Adds spacing at the bottom */
+}
+
+.form-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between; /* Spacing between the buttons */
+}
+
+.form-buttons button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color:#24b676;
+  color: white;
+  margin-left:530px ;
+  width: 180px;
+}
+
+.addbutton {
+  color:#24b676;
+  border: none;
+  align-items: center;
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Pointer cursor for better UX */
+  padding: 0; /* Remove padding */
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Center the button */
+}
+
+.reset {
+  color: green;
+  border: none;
+  align-items: center;
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Pointer cursor for better UX */
+  padding: 0; /* Remove padding */
+  background-color: transparent;
+  margin-right: 800px;
+}
+
+.sip-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px; /* Add some spacing */
+  font-size: 14px;
+}
+
+.sip-link a {
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+.sip-link a:hover {
+  text-decoration: underline;
+}
+.amountupdate {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+  margin-bottom: 15px;
+}
+
+.amountupdate p1 {
+  margin-left: 35px;
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+.amountupdate input {
+  width: 190px; /* Default width for desktop/tablet */
+  height: 30px; 
+  margin-left: 30px;
+}
+
+
+/* Add SIP Form Container Styling */
+
+/* Media query for 768px (tablet view) */
+@media (max-width: 768px) {
+  .transaction-row label {
+    
+  }
+
+  .transaction-row-wrapper {
+    padding: 10px; /* Reduce padding */
+    width: 100%; /* Reduce wrapper width */
+  }
+
+  .form-buttons {
+    flex-direction: column; /* Stack buttons on smaller screens */
+    align-items: center; /* Center align buttons */
+    margin-right: 700px;
+  }
+
+  .transaction-row label {
+    flex-direction: column; /* Stack elements vertically */
+    margin-bottom: 20px; /* Add bottom spacing for clarity */
+  }
+
+  .transaction-row label p1 {
+    margin-left: 10px; /* Slightly more margin for text */
+    font-size: 14px; /* Increase font size for better readability on tablets */
+    width: 100%; /* Adjust width of the p1 element */
+  }
+
+  .transaction-row label input {
+    width: 100%; /* Full width for inputs on tablets */
+    height: 40px; /* Ensure input height is consistent */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 5px; /* Add spacing between text and input */
+  }
+  .amountupdate input {
+    /* Decrease width for tablet view */
+    height: 35px; /* Adjust height if needed */
+    margin-left: 15px; /* Reduce margin for better alignment */
+  }
+
+  .amountupdate p1 {
+    font-size: 12px; /* Adjust font size for tablets */
+    margin-left: 15px; /* Adjust left margin */
+  }
+}
+
+/* Media query for 480px (mobile view) */
+@media (max-width: 480px) {
+  .tabsadd {
+    flex-direction: row; /* Stack tabs vertically */
+    margin: 10px auto; /* Center align tabs */
+  }
+
+  .tabadd {
+    font-size: 12px; /* Reduce font size */
+    text-align: center;
+    padding: 6px 8px; /* Adjust padding */
+  }
+
+ 
+  .transaction-row-wrapper {
+    padding: 10px; /* Reduce padding */
+    width: 95%; /* Nearly full width */
+  }
+
+  .form-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align buttons */
+  
+    margin-right: 5000px;
+  }
+
+  button[type="submit"] {
+  
+  }
+
+  .addbutton,
+  .reset {
+    
+  }
+
+  .sip-link {
+    flex-direction: column; /* Stack SIP link elements */
+    align-items: center;
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .sip-link a {
+    margin: 5px 0; /* Add vertical spacing between links */
+  }
+  .transaction-row label {
+    flex-direction: column; /* Ensure vertical stacking */
+    margin-bottom: 15px; /* Consistent margin between rows */
+  }
+
+  .transaction-row label p1 {
+    margin-left: 5px; /* Minimal margin for mobile */
+    font-size: 12px; /* Small font size for mobile */
+    width: 100%; /* Adjust p1 width to fit mobile screens */
+  }
+
+  .transaction-row label input {
+    width: 100%; /* Full width for inputs on mobile */
+    height: 40px; /* Maintain a comfortable input height */
+    margin-left: 0; /* Remove margin */
+    margin-top: 5px; /* Space between input and label */
+  }
+  .amountupdate input {
+    width: 40px; /* Further decrease width for mobile view */
+    height: 35px; /* Keep height consistent */
+    margin-left: 10px; /* Smaller margin for mobile */
+  }
+
+  .amountupdate p1 {
+    font-size: 10px; /* Smaller font size for mobile */
+    margin-left: 10px; /* Adjust margin for mobile */
+  }
+}

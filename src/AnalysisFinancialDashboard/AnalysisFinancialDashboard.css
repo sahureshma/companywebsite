@@ -1,0 +1,157 @@
+.container {
+    font-family: 'calibri';
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+  
+}
+
+.finanancialh3{
+  margin-top:80px ;
+  align-items: left;
+  color:#24b676;
+  font-size: 26px;
+  margin-left: 30px;
+}
+.finanancialh2{
+ 
+  align-items: left;
+  color:black;
+  font-size: 26px;
+  margin-left: 30px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 20px;
+    
+}
+
+table {
+    width: 45%;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.tables {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+th {
+    background-color:#24b676;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    
+    /* Top-right rounded corner */
+    /* Only bottom border for header */
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0; /* Only top border for rows */
+}
+
+table thead th[colspan="2"] {
+    text-align: center;
+}
+
+
+.financialanalysis,
+.market-table {
+    width: 45%;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 8px; /* Apply border radius to all corners */
+    overflow: hidden; /* Ensures borders are rounded */
+}
+/* Mobile View for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Adjust Table Container to Column Layout */
+    .table-container {
+      flex-direction: column;
+      gap: 20px; /* Add some gap between stacked tables */
+    }
+  
+    /* Table Width Adjustment */
+    table {
+      width: 90%; /* Increase table width on smaller screens */
+      margin: 0 auto; /* Center align the tables */
+    }
+  
+    /* Adjust the tables container for a better fit */
+    .tables {
+      flex-direction: column; /* Stack the tables vertically */
+      gap: 20px; /* Add space between tables */
+    }
+  
+    /* Adjust Header Font Size */
+    h2, h3 {
+      font-size: 20px; /* Slightly reduce font size */
+      margin-left: 20px; /* Adjust margin for better alignment */
+    }
+  
+    /* Adjust Column Width in Financial and Market Tables */
+    .financialanalysis,
+    .market-table {
+      width: 90%; /* Ensure tables fit well */
+    }
+  }
+  
+  /* Mobile View for Small Devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    /* Adjust Table Container to Column Layout */
+    .table-container {
+      flex-direction: column;
+      gap: 15px; /* Reduce gap between tables */
+    }
+  
+    /* Table Width Adjustment */
+    table {
+      width: 100%; /* Make tables take full width */
+      margin: 0 auto;
+    }
+  
+    /* Adjust the tables container for a better fit */
+    .tables {
+      flex-direction: column; /* Stack tables vertically */
+      gap: 15px; /* Add space between stacked tables */
+    }
+  
+    /* Adjust Header Font Size */
+    h2, h3 {
+      font-size: 18px; /* Further reduce font size for smaller screens */
+      margin-left: 10px; /* Adjust margin */
+    }
+  
+    /* Adjust Column Width in Financial and Market Tables */
+    .financialanalysis,
+    .market-table {
+      width: 100%; /* Make tables full-width for mobile */
+    }
+  
+    /* Table Header Padding Adjustment */
+    th {
+      padding: 10px; /* Reduce padding in table headers */
+    }
+  
+    /* Table Cell Padding Adjustment */
+    td {
+      padding: 10px; /* Reduce padding in table cells */
+    }
+  }

@@ -1,0 +1,55 @@
+/* Market.css */
+.marketthead{
+    margin-left: 220px;
+    font-size: 1.8rem;
+    font-family: 'calibri';
+    margin-bottom: 10px;
+   
+}
+.headingmarkett{
+    margin-top: 80px;
+}
+
+.markett {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar styling */
+  .markett .marketsidebar {
+    width: 250px;
+    flex-shrink: 0;
+  }
+  
+  /* Content styling */
+  .markett .marketable {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .markett {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .marketsidebar {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .marketable {
+      width: 100%;
+      padding: 15px;
+    }
+  }

@@ -1,0 +1,148 @@
+.transaction-form {
+  padding: 20px;
+  font-family: 'calibri';
+}
+
+.addcontainer {
+  margin-top: 50px;
+}
+
+.tabsadd {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.tabadd {
+  padding: 6px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid grey;
+  box-shadow: 4px 4px 10px 0 rgba(122, 120, 120, 0.973);
+}
+
+.tabadd:hover {
+  background-color: #24b676;
+  color: white;
+}
+
+.transaction-row {
+  display: flex;
+  flex-wrap: wrap; /* Enables wrapping to the next line */
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.transaction-row label {
+  flex: 1 1 calc(16.66% - 10px); /* Six elements per row */
+  min-width: 120px; /* Ensures labels have enough width */
+  margin-top: 20px;
+  text-align: left;
+}
+
+input,
+select {
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  width: 90%; /* Makes inputs take full width of their label container */
+  box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.transaction-row-wrapper {
+  margin-bottom: 20px;
+  background-color: rgb(248, 241, 241);
+  height: auto; /* Allows the height to adjust based on content */
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px; /* Adds spacing at the bottom */
+}
+
+.form-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between; /* Spacing between the buttons */
+}
+
+.form-buttons button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color:#24b676;
+  color: white;
+  margin-left:530px ;
+  width: 180px;
+}
+
+.addbutton {
+  color:#24b676;
+  border: none;
+  align-items: center;
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Pointer cursor for better UX */
+  padding: 0; /* Remove padding */
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Center the button */
+}
+
+.reset {
+  color: green;
+  border: none;
+  align-items: center;
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Pointer cursor for better UX */
+  padding: 0; /* Remove padding */
+  background-color: transparent;
+  margin-right: 800px;
+}
+
+.sip-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px; /* Add some spacing */
+  font-size: 14px;
+}
+
+.sip-link a {
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+.sip-link a:hover {
+  text-decoration: underline;
+}
+
+/* Add SIP Form Container Styling */
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .transaction-row label {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
+
+  .form-buttons {
+    flex-direction: column; /* Stack buttons on smaller screens */
+  }
+
+  .addbutton,
+  .reset {
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
+  }
+}

@@ -1,0 +1,221 @@
+/* Main container styling */
+.followed-stock-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: Calibri, Arial, sans-serif;
+    text-align: center;
+}
+
+/* Header and description styling */
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/* Stock list container for horizontal scrolling */
+.stock-list-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+}
+
+/* Stock list with horizontal scrolling enabled */
+.stock-list {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+}
+
+.stock-list::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+/* Card styling */
+.stock-card {
+    min-width: 200px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+/* Stock logo styling */
+.stock-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+/* Stock info layout */
+.stock-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stock-name {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.stock-symbol {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.stock-price {
+    font-size: 0.8em;
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.stock-change {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 1px 4px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.stock-positive {
+    color: green;
+}
+
+.stock-negative {
+    color: red;
+}
+
+/* Positive and negative stock change styling */
+.stockpositive {
+    background-color: #4caf50;
+}
+
+.stocknegative {
+    background-color: #f44336;
+}
+
+/* Scroll button styling */
+.scroll-left-btn,
+.scroll-right-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific button colors */
+.scroll-left-btn {
+    left: 10px;
+    background-color: #4caf50;
+    color: white;
+}
+
+.scroll-right-btn {
+    right: 10px;
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Hover effect for scroll buttons */
+.scroll-left-btn:hover,
+.scroll-right-btn:hover {
+    background-color: #45a049;
+}
+/* Responsive styles for devices 768px and below */
+@media (max-width: 768px) {
+    .followed-stock-container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .stock-card {
+        min-width: 180px;
+        padding: 8px;
+    }
+
+    .stock-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .scroll-left-btn,
+    .scroll-right-btn {
+        font-size: 20px;
+        padding: 8px;
+    }
+}
+
+/* Additional responsive styles for devices 480px and below */
+@media (max-width: 480px) {
+    .followed-stock-container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.7em;
+    }
+
+    .stock-card {
+        min-width: 150px;
+        padding: 6px;
+        margin-right: 8px;
+    }
+
+    .stock-logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .stock-name,
+    .stock-symbol,
+    .stock-price,
+    .stock-change {
+        font-size: 0.7em;
+    }
+
+    .scroll-left-btn,
+    .scroll-right-btn {
+        font-size: 18px;
+        padding: 6px;
+    }
+}

@@ -1,0 +1,235 @@
+.profit-loss-container {
+  padding: 20px;
+  font-family: 'calibri';
+}
+
+.profitlosshead{
+ 
+  margin-top:80px ;
+align-items: left;
+color:#24b676;
+font-size: 26px;
+margin-left: 40px;
+}
+
+.profitlosspara {
+  color: #666;
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.profit-loss-container a {
+  color: #666;
+  text-decoration: none;
+}
+
+.profit-loss-table {
+  width: 100%; /* Set the table width to 80% for a narrower layout */
+  margin: 20px auto; /* Center the table */
+  border-collapse: collapse;
+  border-radius: 10px; /* Rounded corners for the table */
+  overflow: hidden; /* Ensures rounded corners are visible */
+}
+
+.profit-loss-table th, .profit-loss-table td {
+  padding: 12px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  border-left: none;
+  border-right: none;
+}
+
+/* For the top-left and top-right corners */
+.profit-loss-table th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.profit-loss-table th:last-child {
+  border-top-right-radius: 10px;
+}
+.profit-loss-table th:first-child, .profit-loss-tablee td:first-child {
+  border-left: 1px solid #ddd;
+}
+
+/* Right border for the last column */
+.profit-loss-table th:last-child, .profit-loss-table td:last-child {
+  border-right: 1px solid #ddd;
+}
+
+.profit-loss-table thead {
+  background-color: #00a65a;
+  color: #fff;
+}
+
+.profit-loss-table tbody tr:not(.subcategory-row):nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.profit-loss-table th, .profit-loss-table td {
+  padding: 8px 12px;
+  text-align: left;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* For the bottom-left and bottom-right corners */
+.profit-loss-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.profit-loss-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.profit-loss-table th {
+  background-color: #00a65a;
+  color: #fff;
+}
+
+.profit-loss-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.stats-container {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+  justify-content: center;
+  
+ 
+}
+
+
+
+.stat-box {
+  background-color: white;
+  padding: 20px;
+  width: 27%;
+  border-radius: 10px; /* Rounded corners for stat boxes */
+  box-shadow: 0 2px 4px rgb(118, 180, 216);
+  border: 1px solid #a9a8a8; /* Adds a red border around the container */
+  padding: 10px; /* Optional: Adds space between the content and the border */
+}
+
+.stat-box p {
+  margin: 5px 0; /* Margin for the entire <p> tag */
+  font-size: 14px;
+  color: #333;
+  display: flex; /* Align year and percentage horizontally */
+  justify-content: space-between; /* Distribute space between year and percentage */
+  align-items: center; /* Vertically align the year and percentage */
+}
+.stat-box p .year {
+  font-weight: bold;
+  color: #555; /* Lighter color for the year part */
+  margin-right: 175px; /* Space between year and percentage */
+}
+
+.stat-box p .percentage {
+  color: #555; /* Color for the percentage */
+  font-size: 14px;
+  /* No need for margin-left here, it's handled by flexbox */
+}
+
+ /* Mobile View for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .profit-loss-container h2 {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+    font-size: 1.3em; /* Adjust font size for tablets */
+  }
+
+  .profit-loss-container p {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+    font-size: 14px; /* Reduce font size for tablets */
+  }
+
+  .profit-loss-table {
+    width: 100%; /* Full width for tables */
+    margin: 10px auto; /* Adjust margin for smaller screens */
+  }
+
+  .profit-loss-table th, .profit-loss-table td {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .profit-loss-table th {
+    font-size: 14px; /* Adjust font size for headers */
+  }
+
+  .profit-loss-table td {
+    font-size: 13px; /* Adjust font size for table data */
+  }
+
+  .stats-container {
+    flex-direction: column; /* Stack the stat boxes vertically */
+    gap: 20px; /* Add spacing between stacked boxes */
+   margin-bottom: 50px;
+  }
+
+  .stat-box {
+    width: 90%; /* Make stat boxes wider for tablets */
+    margin: 0 auto; /* Center stat boxes */
+  }
+
+  .stat-box p {
+    font-size: 12px; /* Reduce font size for small screens */
+    margin-right: 0; /* Remove space between year and percentage */
+  }
+
+  .stat-box p .year {
+    margin-right: 10px; /* Adjust margin for better spacing */
+  }
+}
+
+/* Mobile View for very small devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .profit-loss-container h2 {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+    font-size: 1.1em; /* Further reduce font size */
+  }
+
+  .profit-loss-container p {
+    margin-left: 10px; /* Adjust margin */
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+
+  .profit-loss-table {
+    width: 100%; /* Full width for tables */
+    margin: 10px auto; /* Center the table */
+  }
+
+  .profit-loss-table th, .profit-loss-table td {
+    padding: 8px; /* Reduce padding for mobile screens */
+  }
+
+  .profit-loss-table th {
+    font-size: 12px; /* Smaller font size for headers */
+  }
+
+  .profit-loss-table td {
+    font-size: 11px; /* Smaller font size for table data */
+  }
+
+  .stats-container {
+    flex-direction: column; /* Stack stat boxes vertically */
+    gap: 15px; /* Reduce gap between stacked boxes */
+   
+  }
+
+  .stat-box {
+    width: 100%; /* Full width for stat boxes */
+    margin: 0 auto; /* Center stat boxes */
+    
+  }
+
+  .stat-box p {
+    font-size: 11px; /* Smaller font size for mobile */
+  }
+
+  .stat-box p .year {
+    margin-right: 5px; /* Adjust margin for small screens */
+  }
+} 
+

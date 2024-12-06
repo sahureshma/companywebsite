@@ -1,0 +1,250 @@
+/* StockTable Styling */
+.stock-table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'calibri';
+  }
+  
+  /* Header Styling */
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    font-size: 28px;
+    text-align: left;
+    flex: 1;
+    margin: 0;
+    color: #000;
+    margin-top: 70px;
+  }
+  
+  /* Filter Section Styling */
+  .filters {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .filters span {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Filter Dropdown Styling */
+  .filter-dropdown {
+    position: relative;
+  }
+  
+  .filter-button {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filter-button:hover {
+    background-color: #e0e0e0;
+    color: #24b676; /* Change text color to green on hover */
+  }
+  
+  /* Dropdown Menu Styling */
+  
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 350px;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .dropdown-menu label {
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .dropdown-menu input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  /* Dropdown Actions */
+  .dropdown-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .reset-filters-button,
+  .apply-filters-button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #24b676;
+    color: white;
+  }
+  
+  /* Stock Table Styling */
+  .stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .stock-table th,
+  .stock-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .stock-table th {
+    background-color: #24b676;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .stock-table .positive {
+    color: #4CAF50;
+  }
+  
+  .stock-table .negative {
+    color: #F44336;
+  }
+  
+  /* Show More Button */
+  .show-more-button {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #0349a8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    text-align: center;
+    font-size: 15px;
+    color: #0349a8;
+  }
+  
+  /* Price Change Range */
+  .price-change-range {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .price-change-range label {
+    margin-right: 8px;
+  }
+  
+  .price-change-range .min-text,
+  .price-change-range .max-text {
+    display: none; /* Hide the min and max text */
+  }
+  
+  .to-label {
+    margin: 0 8px;
+    font-weight: bold;
+  }
+  
+  .slider {
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .filters {
+      justify-content: start;
+      gap: 10px;
+      overflow-x: auto;
+    }
+  
+    .filter-button {
+      width: 100%;
+    }
+  
+    .dropdown-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 90%;
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      overflow-y: auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      z-index: 1000;
+    }
+  
+    .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .header h2 {
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+  
+    .stock-table th,
+    .stock-table td {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .reset-filters-button,
+    .apply-filters-button {
+      width: 48%;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .filters {
+      gap: 5px;
+    }
+  
+    .header h2 {
+      font-size: 20px;
+      margin-top: 70px;
+    }
+  
+    .dropdown-menu {
+      padding: 15px;
+      max-width: 400px;
+    }
+  
+    .filter-button {
+      font-size: 12px;
+    }
+  
+    .stock-table th,
+    .stock-table td {
+      font-size: 12px;
+    }
+  }

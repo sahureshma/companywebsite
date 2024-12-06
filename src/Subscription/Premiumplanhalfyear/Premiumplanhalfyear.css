@@ -1,0 +1,664 @@
+.payment-form-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: 'calibri';
+ margin-top: 70px;
+   
+    background-color: #fff;
+   
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #0070ba;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .form-row {
+    display: flex; /* Use Flexbox to align items in a row */
+    gap: 20px; /* Add space between the two inputs */
+  }
+  
+  .form-group {
+    flex: 1; /* Ensure both fields take equal width */
+  }
+
+
+  .form-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .formm-group {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Vertically center align the items */
+    gap: 10px; /* Add space between the elements */
+    margin-bottom: 15px;
+   
+  }
+  
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+  
+
+  
+  .plan-summary {
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 500px;
+    margin-left: 100px;
+    margin-top: 40px;
+    
+  }
+  
+  .plan-summary h3 {
+    margin-bottom: 10px;
+  }
+  
+  .plan-summary p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .paypal-button {
+    width: 70%;
+    padding: 8px;
+    font-size: 16px;
+    color: white;
+    background-color:rgb(255, 179, 37);
+    border: none;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 80px;
+    color: rgb(0, 0, 154);
+  }
+  
+  .paypal-button:hover {
+   
+    background-color:rgb(253, 196, 92);
+  }
+  .buttonpayment-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px; /* Space below the buttons */
+  }
+  
+  .payment-button {
+    padding: 10px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .payment-button.active {
+    background-color: #24b676;;
+    color: #fff;
+
+  }
+  
+  .payment-button:hover {
+    background-color: #24b676;
+    color: #fff;
+   
+  }
+
+  .form-rrow {
+    display: flex; /* Use Flexbox to align items in a row */
+    gap: 290px; 
+    /* Add space between the two inputs */
+  }
+  .form-rrowelite{
+    display: flex; /* Use Flexbox to align items in a row */
+    gap: 325px;
+  }
+  .form-rrrow {
+    display: flex; /* Use Flexbox to align items in a row */
+    gap: 360px; 
+    border-top: 1px solid rgb(218, 213, 213);
+    /* Add space between the two inputs */
+  }
+  .premiumheading{
+    color:#696565;
+  }
+/* Container for the checkbox and label */
+.checkboxpayment-container {
+    display: flex;
+    align-items: flex-start; /* Align checkbox with label text */
+    gap: 10px; /* Space between checkbox and label text */
+    margin-top: 20px;
+    font-size: 14px; /* Adjust font size */
+    color: #333; /* Dark gray color for better readability */
+    line-height: 1.4; /* Space out multi-line text */
+  }
+  
+  /* Style for the checkbox */
+  .checkboxpayment-container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .paymentparagraph {
+    background-color: #f9f9f9; /* Light gray background */
+    /* Adds space on the left */
+    padding: 10px; /* Adds padding inside the paragraph */
+    box-shadow: 0px 4px 6px rgba(185, 183, 183, 0.3); /* Subtle shadow effect */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Adjust text size */
+    color: #333; /* Dark gray text color for readability */
+  }
+  .paragraphpremium{
+    margin-left: 20px;
+  }
+  .billing-cycle {
+    display: flex;
+    justify-content: space-between; /* Space out the options */
+    gap: 20px; /* Add space between Annually and Half-year */
+    margin-top: 20px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .billing-cycle label {
+   
+    flex-direction: row; /* Align the radio button and text horizontally */
+    align-items: center; /* Center align the radio button and text */
+    gap: 8px; /* Space between the radio button and the text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 45%; /* Ensure the options take up enough space */
+  }
+  
+  .billing-cycle input[type="radio"] {
+    margin-right: 8px; /* Space between the radio button and text */
+    cursor: pointer; 
+    color: #24b676;
+    /* Pointer cursor on the radio button */
+  }
+  
+  /* Styling for the description below the radio button */
+  .billingpayment {
+    font-size: 14px;
+    color: #666; /* Lighter gray color for the description */
+    margin-top: 5px; /* Space between the radio button and description */
+  }
+  /* Style the radio button */
+input[type="radio"] {
+
+    appearance: none; /* Remove default styling */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  width: 3px;
+  height: 5px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+ 
+    
+   
+  }
+  /* Style for the checked radio button */
+input[type="radio"]:checked {
+    border-color: white; /* Change border color */
+    background-color:#24b676; /* Change background color */
+  }
+  input[type="radio"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+  left: 4px;
+    width: 10px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .addpayment {
+    padding: 8px 10px;
+    font-size: 14px;
+   
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px;
+  }
+  .error input {
+    border-color: red;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 0.25em;
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .modal-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modal-button:hover {
+    background-color: #45a049;
+  }
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 500px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popup-content h3 {
+    margin-bottom: 10px;
+  }
+  
+  .popup-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .popup-input input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  
+  .popuppara{
+    font-size: 14px;
+    color: #000;
+   
+  }
+  .popupparagraph {
+   
+    
+    margin-right: 150px;
+    font-size: 14px; /* Adjust font size if necessary */
+    color: black; /* Optional: Adjust text color */
+  }
+  .privacy-policyspan{
+    color: #24b676; /* Make the text green */
+    font-weight: bold;
+  }
+ .verifybtn{
+    background-color: #24b676;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+ }
+ .close-icon {
+  
+  top: 10px;
+ 
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333; /* Default color for the icon */
+  cursor: pointer;
+  z-index: 10; /* Ensure it's above other elements */
+  margin-left: 440px;
+}
+
+.close-icon:hover {
+  color: black; /* Highlight color on hover */
+  transform: scale(1.2); /* Optional: Slight zoom effect on hover */
+  transition: all 0.2s ease-in-out; /* Smooth transition */
+}
+.otp-input-container {
+  display: flex;
+  align-items: center; /* Vertically align the input and button */
+  gap: 10px; /* Add space between the input and button */
+}
+
+.otp-input-container input {
+  flex: 1; /* Allow the input field to take up available space */
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.otp-input-container .verifybtn {
+  padding: 10px 15px;
+  font-size: 15px;
+  background-color: #24b676;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.otp-input-container .verifybtn:hover {
+  color: white;
+  background: #188053; 
+}
+.otpverification{
+  color: black;
+  font-size: 14px;
+  margin-right: 350px;
+}
+.accountverification{
+  color: black;
+  font-size: 14px;
+  margin-right: 310px;
+}
+.otp-input.error-border {
+  border: 2px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.resend-timer-message {
+  font-size: 14px;
+  color: #ff5722; /* Optional: Change the color */
+  margin-top: 10px;
+}
+
+
+  @media (max-width: 768px) {
+    .payment-form-container {
+     
+      margin-right: 20px;
+      margin-bottom: 60px;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .form-group {
+      flex: 1 1 100%;
+    }
+  
+    .buttonpayment-group {
+     
+      align-items: stretch;
+    }
+  
+    .payment-button {
+      margin: 5px 0;
+    }
+    .plan-summary {
+      width: 100%; /* Stretch to the full width of the container */
+      margin: 20px auto; /* Center align with spacing */
+      padding: 15px; /* Add padding for clarity */
+      border: 1px solid #ddd; /* Subtle border for separation */
+      background-color: #f9f9f9; /* Light background for readability */
+      border-radius: 8px;
+     
+    }
+  
+    .form-rrow {
+       /* Stack items vertically */
+      gap: 10px; /* Add spacing between title and price */
+      margin-bottom: 15px; /* Space below the section */
+    }
+  
+    .form-rrow h3, 
+    .form-rrow p {
+      font-size: 16px; /* Adjust font size for mobile screens */
+      margin: 0; /* Remove extra margins */
+    }
+    .form-rrowelite{
+      gap: 10px; /* Add spacing between title and price */
+      margin-bottom: 15px; /* Space below the section */
+    }
+    .form-rrowelite h3,
+    .form-rrowelite p{
+      font-size: 16px; /* Adjust font size for mobile screens */
+      margin: 0; 
+    }
+    .form-rrowelite p{
+      margin-left: 250px;
+    }
+    .form-rrow p{
+      margin-left: 220px;
+    }
+    .form-rrrow {
+    /* Stack items vertically */
+      gap: 10px; /* Add spacing between title and total */
+      margin: 15px 0; /* Space between sections */
+      border-top: 1px solid #ddd; /* Keep border for separation */
+      padding-top: 10px;
+    }
+  
+    .form-rrrow h3, 
+    .form-rrrow p {
+      font-size: 16px; /* Adjust font size */
+      font-weight: bold;
+      margin: 0;
+      color: #333; /* Darker text for visibility */
+    }
+     .form-rrrow p{
+margin-left: 280px;
+    }
+  
+    .paymentparagraph {
+      font-size: 14px; /* Adjust text size for readability */
+      line-height: 1.6; /* Space out lines */
+      padding: 10px; /* Add padding for clear text area */
+      background-color: #f2f2f2; /* Subtle background color */
+      border-radius: 5px; /* Rounded edges */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    }
+  
+    .checkboxpayment-container {
+      display: flex;
+     /* Stack checkbox and text vertically */
+      gap: 10px; /* Add space between checkbox and label */
+      margin-top: 20px;
+    }
+  
+    .checkboxpayment-container label {
+      font-size: 14px; /* Adjust font size for readability */
+      line-height: 1.4; /* Improve spacing for multi-line text */
+      color: #333; /* Dark gray text color */
+    }
+  
+    .paypal-button {
+      width: 40%; /* Full-width button for tappability */
+      font-size: 16px; /* Adjust font size */
+      padding: 12px; /* Increase padding for comfortable tap areas */
+      margin-top: 20px; /* Space above the button */
+      border-radius: 6px; /* Rounded edges */
+      background-color: rgb(255, 179, 37); /* Consistent button color */
+      color: rgb(0, 0, 154); /* Text color */
+    }
+  
+    .paypal-button:hover {
+      background-color: rgb(253, 196, 92); /* Slightly darker shade on hover */
+    }
+    .popup-content {
+      width: 90%; /* Make popup content take up more screen space */
+      padding: 15px; /* Reduce padding for smaller screens */
+    }
+  
+    .popup-input {
+      flex-direction: column;
+      align-items: flex-start; /* Stack the input and button */
+    }
+  
+    .popup-input input {
+      width: 100%;
+      padding: 12px; /* Increase padding for better touch experience */
+    }
+  
+    .popupparagraph {
+      margin-right: 0; /* Remove the large margin for mobile */
+      font-size: 12px; /* Reduce font size */
+    }
+  
+    .close-icon {
+      margin-left: 90%; /* Adjust close button position */
+      font-size: 20px;
+    }
+  
+    .otpverification, .accountverification {
+      font-size: 16px;
+      margin-right: 0; /* Align left for mobile */
+    }
+  
+    .otp-input-container {
+      flex-direction: column; /* Stack the input and button */
+      align-items: stretch; /* Full width */
+    }
+  
+    .otp-input-container .verifybtn {
+      width: 100%; /* Make the button take full width */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .payment-form-container {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 1.3rem;
+    }
+  
+    .buttonpayment-group {
+   display: flex;
+    }
+  
+    .payment-button {
+      font-size: 0.8rem;
+    }
+  
+    .form-group input,
+    .form-group select {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    .paypal-button {
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+  
+    .checkboxpayment-container label {
+      font-size: 0.85rem;
+    }
+  
+    .plan-summary {
+     margin-bottom: 100px;
+    }
+    .popup-content {
+      width: 55%; /* Make popup content even more responsive */
+      padding: 10px;
+
+    }
+  
+    .popup-input input {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px; /* Adjust font size */
+    }
+  
+    .popupparagraph {
+      font-size: 12px; /* Reduce font size */
+    }
+  
+    .close-icon {
+      margin-left: 90%;
+      font-size: 18px; /* Smaller close icon */
+    }
+  
+    .otpverification, .accountverification {
+      font-size: 14px; /* Reduce font size */
+      margin-right: 0; /* Align left */
+    }
+  
+    .otp-input-container {
+      flex-direction: column; /* Stack elements */
+      width: 100%;
+    }
+  
+    .otp-input-container input {
+      padding: 12px; /* Make input easier to interact with */
+    }
+  
+    .otp-input-container .verifybtn {
+      width: 100%; /* Make button take full width */
+    }
+  
+    .error-message {
+      font-size: 10px; /* Smaller font for error message */
+    }
+  }

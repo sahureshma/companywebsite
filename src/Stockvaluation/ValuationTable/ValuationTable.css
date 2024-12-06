@@ -1,0 +1,90 @@
+.valuationTableContainer {
+  margin: 20px auto;
+  max-width: 1200px;
+  margin-top: 80px;
+}
+
+.valuationTableTitle {
+  font-size: 24px;
+  text-align: left;
+  margin: 20px 0;
+  color: #24b676;
+  font-family: 'Calibri';
+  margin-bottom: 50px;
+}
+
+.MuiTableCell-root {
+  font-family: 'Calibri', sans-serif;
+  font-size: 14px;
+}
+
+.MuiTableHead-root .MuiTableCell-root {
+  font-weight: bold;
+}
+
+.MuiTableRow-root:hover {
+  background-color: #f1f1f1;
+}
+@media (max-width: 768px) {
+  /* Adjust container width */
+  .valuationTableContainer {
+    max-width: 100%; /* Full width on smaller screens */
+    margin-top: 440px; /* Adjust top margin */
+    padding: 10px; /* Add padding for better spacing */
+    margin-bottom: 50px;
+  }
+
+  /* Title font size adjustment */
+  .valuationTableTitle {
+    font-size: 20px; /* Reduce font size */
+    text-align: center; /* Center-align title */
+    margin: 10px 0; /* Adjust margin */
+  }
+
+  /* Table cell font size */
+  .MuiTableCell-root {
+    font-size: 12px; /* Reduce font size for smaller screens */
+  }
+
+  /* Table header font size */
+  .MuiTableHead-root .MuiTableCell-root {
+    font-size: 13px; /* Slightly reduce font size */
+  }
+
+  /* Adjust hover effect for table rows */
+  .MuiTableRow-root:hover {
+    background-color: #f9f9f9; /* Lighter hover effect */
+  }
+}
+
+/* Mobile View for Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  /* Adjust container width */
+  .valuationTableContainer {
+    max-width: 100%; /* Full width on mobile */
+    margin-top: 500px; /* Reduce top margin */
+    padding: 10px; /* Add padding */
+  }
+
+  /* Title font size adjustment */
+  .valuationTableTitle {
+    font-size: 18px; /* Further reduce font size */
+    text-align: center; /* Keep title centered */
+    margin: 10px 0; /* Adjust margin */
+  }
+
+  /* Table cell font size */
+  .MuiTableCell-root {
+    font-size: 11px; /* Further reduce font size for small screens */
+  }
+
+  /* Table header font size */
+  .MuiTableHead-root .MuiTableCell-root {
+    font-size: 12px; /* Reduce header font size */
+  }
+
+  /* Adjust hover effect for table rows */
+  .MuiTableRow-root:hover {
+    background-color: #f9f9f9; /* Keep hover effect lighter */
+  }
+}

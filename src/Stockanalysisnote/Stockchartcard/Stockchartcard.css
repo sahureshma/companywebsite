@@ -1,0 +1,47 @@
+/* Styling for the chart container */
+.analcontainer {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px; /* Margin at the bottom for spacing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   margin-top: 20px;
+  }
+  
+  /* Hover effect for the chart container */
+  .analcontainer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling for the chart title */
+  .chart-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Tooltip styling */
+  .recharts-tooltip-wrapper {
+    background-color: #fff !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .recharts-tooltip-item {
+    color: #333;
+  }
+  
+  /* Styling the line in the chart */
+  .recharts-line {
+    stroke-width: 2;
+  }
+  
+  /* Styling the shaded area under the line */
+  .recharts-area {
+    fill-opacity: 0.3;
+  }

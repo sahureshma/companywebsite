@@ -1,0 +1,81 @@
+.goldetf-container {
+    padding: 20px;
+    font-family: 'calibri';
+    background-color: #f5f5f5;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .goldetf-title {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 16px;
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  .goldetf-description {
+    color: #666;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  .goldetf-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .goldetf-table thead th {
+    background-color: #24b676;
+    color: white;
+    padding: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .goldetf-table tbody td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: black;
+  }
+  .goldetf-table tbody td.marketname{
+    color:#0349a8;
+  }
+  .goldetf-table tbody td.symbolmarket{
+    color: #0349a8;
+  }
+
+  
+  
+  .goldetf-table tbody tr:hover {
+    background-color: #e0f7fa;
+    cursor: pointer;
+  }
+
+  
+  @media (max-width: 600px) {
+    .goldetf-title {
+      font-size: 24px;
+    }
+  
+    .goldetf-description {
+      font-size: 14px;
+    }
+  
+    .goldetf-table thead th,
+    .goldetf-table tbody td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }

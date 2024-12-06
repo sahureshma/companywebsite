@@ -1,0 +1,103 @@
+.nifty50-tables {
+  display: flex;
+  gap: 50px; /* Increased spacing between the containers */
+  font-family: 'Calibri', sans-serif;
+  justify-content: center; /* Horizontally centers the containers */
+  align-items: center; /* Vertically centers the containers */
+  height: 30vh; /* Height of the container layout */
+  margin: 0 auto; /* Center the layout within the parent/container */
+  margin-bottom: 100px;
+}
+
+.nifty50table-container {
+  flex: 1; /* Containers take equal space */
+  max-width: 5600px; /* Adjusted the width of the containers */
+  width: 100%; /* Ensures full responsiveness */
+  background-color: white; /* Background for clear visibility */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  overflow: hidden; /* Ensures content fits within the rounded border */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better distinction */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nifty50-table {
+  width: 100%; /* Table takes full width of the container */
+  border-collapse: collapse; /* Ensures no gaps between table cells */
+  margin: 0; /* Remove default margins for proper alignment */
+}
+
+.nifty50-table th,
+.nifty50-table td {
+  padding: 10px;
+  
+  border-bottom: 1px solid #ddd; /* Optional: Light bottom border for rows */
+}
+.nifty50-table th:first-child,
+.nifty50-table td:first-child {
+    border-left: 1px solid #ddd; /* Left border for the first column */
+    text-align: left;
+}
+
+.nifty50-table th {
+  background-color: #24b676; /* Table header background color */
+  color: white; /* Header text color */
+  text-transform: uppercase; /* Optional: Makes text in header uppercase */
+}
+
+.positive {
+  color: green; /* Positive values in green */
+  font-weight: bold; /* Makes the values stand out */
+}
+
+.negative {
+  color: red; /* Negative values in red */
+  font-weight: bold; /* Makes the values stand out */
+}
+/* Mobile View: For screens 768px and below */
+@media (max-width: 768px) {
+  .nifty50-tables {
+    gap: 20px; /* Adjust the gap between tables */
+    margin-bottom: 80px; /* Adjust bottom margin */
+  }
+
+  .nifty50table-container {
+    max-width: 100%; /* Ensure containers take full width */
+    margin: 0 10px; /* Add space on the sides */
+  }
+
+  .nifty50-table th,
+  .nifty50-table td {
+    padding: 6px; /* Reduce padding for compact screens */
+    font-size: 12px; /* Smaller font size for better readability */
+  }
+
+  .nifty50-table th {
+    font-size: 14px; /* Slightly larger header font size */
+  }
+}
+
+/* Very Small Mobile View: For screens 480px and below */
+@media (max-width: 480px) {
+  .nifty50-tables {
+    gap: 15px; /* Reduce the gap between tables */
+    margin-bottom: 80px; /* Adjust bottom margin further for small screens */
+  }
+
+  .nifty50table-container {
+    max-width: 100%; /* Ensure containers take full width */
+    margin: 0 5px; /* Add less space on the sides */
+  }
+
+  .nifty50-table th,
+  .nifty50-table td {
+    padding: 4px; /* Further reduce padding */
+    font-size: 10px; /* Reduce font size for very small screens */
+  }
+
+  .nifty50-table th {
+    font-size: 12px; /* Slightly larger header font size for readability */
+  }
+}

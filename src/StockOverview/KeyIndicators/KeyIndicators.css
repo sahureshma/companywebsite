@@ -1,0 +1,76 @@
+.key-indicators-card {
+    border: 2px solid #a9c3e2;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px black;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 370px;
+    font-family: "calibri";
+  }
+  
+  .key{
+    font-size: 23px;
+    font-family:  "calibri";
+    margin-top: 0;
+  }
+  
+  .divider {
+    margin: 10px 0;
+  }
+  
+  .indicator {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  
+  .indicator:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  @media (max-width: 768px) {
+    .key-indicators-card {
+      max-width: 90%; /* Make the card take up more width */
+      padding: 15px; /* Reduce padding for better fit */
+      height: auto; /* Allow the height to adjust based on content */
+    }
+  
+    .key {
+      font-size: 20px; /* Slightly smaller font size */
+    }
+  
+    .indicator {
+      font-size: 14px; /* Slightly smaller font size for indicators */
+      flex-direction: column; /* Stack the indicator items vertically */
+      align-items: flex-start; /* Align items to the left */
+      padding: 8px 0; /* Increase padding for better touch interaction */
+    }
+  
+    .indicator:nth-child(odd) {
+      background-color: #f1f1f1; /* Lighter background color for odd rows */
+    }
+  }
+  
+  /* Mobile View for small devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    .key-indicators-card {
+      max-width: 95%; /* Take up nearly the full width */
+      padding: 10px; /* Even smaller padding */
+      height: auto; /* Allow height to adjust */
+    }
+  
+    .key {
+      font-size: 18px; /* Reduce font size further */
+    }
+  
+    .indicator {
+      font-size: 12px; /* Reduce font size for small screens */
+      flex-direction: column; /* Stack the indicator items vertically */
+      align-items: flex-start; /* Align items to the left */
+      padding: 6px 0; /* Reduce padding for compactness */
+    }
+  
+    .indicator:nth-child(odd) {
+      background-color: #f1f1f1; /* Lighter background color for odd rows */
+    }
+  }

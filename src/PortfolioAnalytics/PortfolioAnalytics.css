@@ -1,0 +1,85 @@
+/* General Container Styles */
+.portfolio-container {
+    font-family: Calibri, Arial, sans-serif;
+    padding: 20px;
+    color: #333;
+    max-width: 600px; /* Set a maximum width */
+    margin: 0 auto; /* Center the container */
+    margin-left: 300px; /* Add left margin to prevent overlap with sidebar */
+    font-family: 'Calibri';
+    margin-top: 50px;
+    background-color: white;
+}
+.chart-container{
+    height: 200px;
+}
+
+/* Responsive adjustment if the sidebar is hidden on smaller screens */
+@media (max-width: 768px) {
+    .portfolio-container {
+        margin-left: 0; /* Reset left margin on small screens */
+        padding: 15px; /* Reduce padding */
+        margin-top: 20px; /* Adjust top margin */
+    }
+
+    .portfolio-welcome {
+        font-size: 20px; /* Reduce font size */
+    }
+
+    .portfolio-subtitle {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .portfolio-card {
+        padding: 15px; /* Reduce padding for cards */
+        margin-top: 15px;
+    }
+
+    .portfolio-title {
+        font-size: 16px; /* Adjust title font size */
+    }
+
+    .time-range-selector span {
+        font-size: 14px; /* Adjust font size for selector */
+    }
+
+    .chart-container {
+        height: 250px; /* Reduce chart height */
+    }
+}
+
+/* Additional adjustment for very small screens (480px and below) */
+@media (max-width: 480px) {
+    
+
+    .portfolio-welcome {
+        font-size: 18px; /* Reduce font size further */
+    }
+
+    .portfolio-subtitle {
+        font-size: 12px; /* Reduce font size further */
+    }
+
+    .portfolio-card {
+        padding: 10px; /* Further reduce padding for cards */
+        margin-top: 10px;
+    }
+
+    .portfolio-title {
+        font-size: 14px; /* Further adjust title font size */
+    }
+
+    .time-range-selector {
+        flex-direction: column; /* Stack the options vertically */
+        gap: 5px; /* Adjust spacing */
+    }
+
+    .time-range-selector span {
+        font-size: 12px; /* Adjust font size for selector */
+    }
+
+    .chart-container {
+        height: 200px; /* Further reduce chart height */
+        width: 320px;
+    }
+}

@@ -1,0 +1,288 @@
+.portfolio-account-stock-container {
+    font-family: 'Calibri', Arial, sans-serif;
+    background-color: #ffffff;
+    border: 3px solid #a79a9a;
+    border-radius: 8px;
+    padding: 16px;
+    width: 85%; /* Set container width to 80% of the viewport width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  
+  .portfolio-account-stock-header {
+    display: flex;
+  justify-content: space-between; /* Filters on the left, actions on the right */
+  flex-wrap: wrap; /* Wrap elements for smaller screens */
+  margin-bottom: 20px;
+  }
+  .portfolio-account-stock-controls {
+    display: flex;
+    justify-content: space-between; /* Space between filters and actions */
+    align-items: center; /* Align vertically */
+    width: 100%;
+  }
+  
+  .portfolio-account-stock-filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+  }
+  
+  .filter-button {
+    cursor: pointer;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
+  .filter-button.active {
+    background-color:  #24b676;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .filter-button:hover {
+    background-color: #24b676;
+    color: white;
+  }
+  
+  .portfolio-account-stock-actions {
+    display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-left: auto; /* Push buttons to the right */
+  justify-content: flex-end; /* Align buttons horizontally to the right */
+  align-items: center; /* Align buttons vertically in the center */
+
+ 
+  }
+  
+  .portfolio-account-stock-actions button {
+    background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+  
+  .portfolio-account-stock-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    margin-top: 10px; /* Space between buttons and group section */
+    justify-content: flex-end; /* Align group section to the right */
+  }
+  
+
+  
+  /* Table styling */
+.portfolio-account-stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+   
+  }
+  
+  /* Set green background for table header */
+  .portfolio-account-stock-table thead {
+    background-color: #24b676; /* Green background */
+    color: white; /* White text */
+   
+  }
+  
+  
+  
+  /* Other styling can go here */
+  
+ /* Set green background for table header */
+.portfolio-account-stock-table th {
+    background-color: #24b676; /* Green background */
+    color: white; /* White text for contrast */
+    padding: 10px; /* Optional: Adds padding to header cells for better spacing */
+  }
+  
+  .portfolio-account-stock-table td{
+   
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .tportfolio-account-stock-table td:first-child {
+    border-left: 1px solid #ddd; /* Left vertical border */
+  }
+  
+  .portfolio-account-stock-table td:last-child {
+    border-right: 1px solid #ddd; /* Right vertical border */
+  }
+  .portfolio-account-stock-group input[type="radio"] {
+    appearance: none; /* Remove default styling */
+    width: 14px;
+    height: 14px;
+    border: 1px solid black; /* Outer border color */
+    border-radius: 50%; /* Make it circular */
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+  }
+  .portfolio-account-stock-group input[type="radio"]:checked {
+    
+    background-color: #24b676; /* Inner circle green when checked */
+  }
+  
+  .stock-name {
+    font-weight: bold;
+  }
+  
+  .stock-actions {
+    display: block;
+    font-size: 12px;
+    color:  #24b676;
+    margin-top: 5px;
+  }
+  
+  .negative {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .table-total td {
+    font-weight: bold;
+  }
+  
+  .portfolio-account-stock-notep {
+    font-size: 14px;
+    color: black;
+    
+    padding: 10px;
+   
+  }
+  .table-cell {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  .table-cell.negative {
+  color: red;
+}
+/* Style the stock name */
+.stock-name {
+    font-weight: bold; /* You can add other styles as well */
+  }
+  
+  /* Style for the stock actions span (Add | Sell | trash) */
+  .stock-actions .action-text {
+    color: #24b676; /* Blue color for "Add | Sell" */
+    cursor: pointer; /* Make it look clickable */
+    margin-right: 8px; /* Space between "Add | Sell" and trash icon */
+  }
+  
+  
+  .stock-actions .trash-icon {
+    color: rgb(102, 92, 92); /* Red color for the trash icon */
+    cursor: pointer; /* Make the trash icon clickable */
+  }
+  .subcategory-row {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 1000px; /* Adjust as per content size */
+    opacity: 1;
+  }
+  .subcategory-row.closed {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .subcategory-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .subcategory-table th, .subcategory-table td {
+    padding: 8px;
+    text-align: left;
+  }
+  .icon-container {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adjust the gap as needed */
+  }
+  
+  .edit-icon,
+  .delete-icon,
+  .add-icon {
+    font-size: 14px; /* Adjust the size of the icons */
+    cursor: pointer; /* Makes the icons clickable */
+    color: rgb(102, 92, 92); /* Red color for the trash icon */
+
+  }
+  
+  .border {
+    border-left: 1px solid #000; /* Border between icons, color can be adjusted */
+    height: 20px; /* Adjust the height of the border */
+  }
+  .hover-effect {
+    transition: color 0.3s ease; /* Smooth color transition */
+    color: black; /* Default text color */
+  }
+  
+  .hover-effect:hover {
+    color: green; /* Change text color to green on hover */
+  }
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .popup-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .yes-button,
+  .no-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .yes-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .no-button {
+    background-color: #f44336;
+    color: white;
+  }

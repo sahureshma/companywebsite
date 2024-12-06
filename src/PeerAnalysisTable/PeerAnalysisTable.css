@@ -1,0 +1,129 @@
+/* Wrapper for the table */
+.peer-table-wrapper {
+  padding: 20px;
+    font-family: 'Calibri';
+    margin: 20px;
+}
+
+/* Styling for the table */
+.peer-analysis-table {
+  width: 100%; /* Set table width to 90% for centered and responsive layout */
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse;
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensures rounded corners are visible */
+
+}
+.sort-icons {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+.peer-analysis-table th {
+  cursor: pointer;
+  user-select: none;
+}
+
+.sort-icons svg {
+  font-size: 12px;
+  color: white /* Default icon color */
+}
+
+
+/* Header and cell styling */
+.peer-analysis-table th,
+.peer-analysis-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.peer-analysis-table th {
+  cursor: pointer;
+  background-color:#24b676;
+  transition: background-color 0.3s ease;
+}
+.peer-analysis-table tr{
+  font-size: 14px;
+  font-family: 'calibri';
+  align-items: center;
+ 
+}
+
+
+.peer-analysis-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.peer-analysis-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.peer-analysis-table span {
+  font-weight: bold;
+}
+.header-title-updown{
+  display: flex; /* Align items in a row */
+  align-items: center; /* Vertically center the text and icons */
+  gap: 0px; /* Center-align them horizontally */
+
+}
+.stockpeerheader{
+  margin-top:80px ;
+align-items: left;
+color:#24b676;
+font-size: 26px;
+margin-left: 50px;
+}
+  @media (max-width: 768px) {
+    .peer-analysis-container h2 {
+      margin-left: 20px; /* Adjust margin for smaller screens */
+      font-size: 1.3em; /* Adjust font size for smaller screens */
+    }
+  
+    .peer-analysis-table {
+      width: 100%; /* Make the table take full width */
+      margin: 10px auto; /* Adjust margins for smaller screens */
+    }
+  
+    .peer-analysis-table th, .peer-analysis-table td {
+      padding: 10px; /* Adjust padding for better fit */
+    }
+  
+    /* Adjust font size of table headers and cells */
+    .peer-analysis-table th {
+      font-size: 14px;
+    }
+  
+    .peer-analysis-table td {
+      font-size: 13px;
+    }
+
+  }
+  
+  /* Mobile View for very small devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    .peer-analysis-container h2 {
+      margin-left: 10px; /* Adjust margin for even smaller screens */
+      font-size: 1.1em; /* Further reduce font size for small screens */
+    }
+  
+    .peer-analysis-table {
+      width: 100%; /* Full width for mobile devices */
+      margin: 10px auto;
+    }
+  
+    .peer-analysis-table th, .peer-analysis-table td {
+      padding: 8px; /* Slightly smaller padding for mobile */
+    }
+  
+    /* Adjust font size for table headers and cells */
+    .peer-analysis-table th {
+      font-size: 12px;
+    }
+  
+    .peer-analysis-table td {
+      font-size: 11px; /* Smaller font for small mobile screens */
+    }
+  }

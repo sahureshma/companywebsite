@@ -1,0 +1,191 @@
+/* Container for the entire section */
+.deal-section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+      /* Background image with gradient overlay */
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.8) 0%, 
+    rgba(255, 255, 255, 0) 40%, 
+    rgba(255, 255, 255, 0.8) 0%
+  ),
+  url("https://myequitylab.com/upload/candle%20chart%201_1679116683.jpeg");
+   
+    background-repeat: no-repeat;
+    font-family: "calibri";
+    margin-top: 100px;
+    
+  }
+  
+  /* Left side text styling */
+  .deal-chart-text {
+    max-width: 60%;
+  }
+  
+  .deal-highlight-text {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 70px;
+    font-family: 'calibri';
+  
+  margin-left: 100px;
+    /* Gradient text styling */
+    background: linear-gradient(90deg, #24b676, #238486);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Makes the gradient visible */
+  }
+  
+  /* Right side offer box */
+  .deal-offer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+  
+    /* Gradient border with two colors */
+    border: 6px solid transparent;
+    border-radius: 12px; /* Curved corners */
+    padding: 20px;
+    width: 20%;
+    height: 230px; /* Adjust height as needed */
+    text-align: center;
+ 
+    /* Apply the gradient border using border-image */
+    background-clip: content-box; /* Ensures the gradient is outside the content */
+   border: 4px solid #238486;
+  }
+  
+  
+  .deal-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    font-family: 'calibri';
+  }
+  
+  .deal-plan-description {
+    position: absolute;
+   
+   margin-right: 90px;
+    background: linear-gradient(90deg, #24b676, #238486);
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 10px 20px;
+    border-radius: 0 40px 0px 0;
+    transform-origin: top left;
+  
+    text-align: center;
+  }
+  
+  .deal-explore-button {
+    display: inline-block;
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #24b676, #238486);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 100px;
+  }
+  
+  .deal-explore-button:hover {
+    background: linear-gradient(90deg, #047857, #10b981);
+  }
+  
+  /* General Responsive Design */
+@media (max-width: 768px) {
+  .deal-section-container {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 50px 20px; /* Adjust padding for smaller screens */
+    text-align: center; /* Center-align content */
+  }
+
+  .deal-chart-text {
+    max-width: 100%; /* Use full width */
+    margin-bottom: 30px; /* Add spacing between sections */
+    margin-left: 0; /* Remove extra margin */
+  }
+
+  .deal-highlight-text {
+    font-size: 25px; /* Smaller font size for headlines */
+    margin-bottom: 50px; /* Adjust spacing */
+    margin-left: 0; /* Center-align text */
+  }
+
+  .deal-offer-box {
+    width: 50%; /* Make the box wider for visibility */
+
+    height: auto; /* Allow content to dictate height */
+    padding: 20px; /* Maintain padding */
+
+  }
+  .deal-title {
+    font-size: 16px; /* Adjust font size */
+    margin-bottom: 50px;
+  }
+
+  .deal-plan-description {
+    font-size: 16px; /* Reduce font size */
+    padding: 8px 15px; /* Adjust padding */
+  
+    
+  }
+
+  .deal-explore-button {
+    width: 80%; /* Adjust button size */
+    font-size: 14px; /* Smaller font size */
+    margin-top: 20px; /* Reduce margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .deal-section-container {
+   
+    background: linear-gradient(
+        rgba(255, 255, 255, 1) 0%, 
+        rgba(255, 255, 255, 0.1) 20%, 
+        rgba(255, 255, 255, 1) 0%
+    ),
+    url("https://myequitylab.com/upload/candle%20chart%201_1679116683.jpeg");
+    background-size: contain;
+    background-position: center;
+}
+
+  .deal-highlight-text {
+    font-size: 20px; /* Further reduce font size */
+    margin-bottom: 30px; /* Adjust spacing */
+  }
+
+  .deal-offer-box {
+    width: 70%;
+    padding: 15px; /* Reduce padding */
+    height: auto; /* Flexible height */
+  }
+
+  .deal-title {
+    font-size: 16px; /* Adjust font size */
+    margin-bottom: 50px;
+  }
+
+  .deal-plan-description {
+    font-size: 14px; /* Smaller text */
+    padding: 6px 12px; /* Compact padding */
+    margin-left: -20px;
+  }
+
+  .deal-explore-button {
+    width: 100%; /* Full-width button */
+    font-size: 12px; /* Smaller font size */
+    padding: 8px; /* Compact padding */
+  }
+}
+
+  

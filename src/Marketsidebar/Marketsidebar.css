@@ -1,0 +1,51 @@
+/* MarketsSidebar.css */
+
+.markets-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 200px;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.sidebar-button {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+/* Active state for selected button */
+.sidebar-button.active {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+}
+
+/* Hover effect when mouse hovers over the button */
+.sidebar-button:hover {
+  color:#ffffff;
+  background-color: #4CAF50;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 600px) {
+  .markets-sidebar {
+    max-width: 100%;
+    padding: 5px;
+    gap: 8px;
+  }
+
+  .sidebar-button {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+}

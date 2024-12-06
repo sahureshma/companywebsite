@@ -1,0 +1,87 @@
+/* Container for the entire analysis section */
+.analysisnotecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+  }
+  
+  /* Row container for each set of charts */
+  .chart-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px; /* Space between the charts */
+    margin-bottom: 40px; /* Space between rows */
+    flex-wrap: wrap; /* Allow charts to wrap to next line on smaller screens */
+    width: 150%;
+    max-width: 1200px;
+   max-height:500px;/* Max width for the chart rows */
+   
+  }
+  
+  /* Ensure each chart takes up equal space within the row */
+  .chart-row > div {
+    flex: 1;
+    min-width: 300px; /* Minimum width for each chart */
+    max-width: 550px; /* Max width for each chart */
+    box-sizing: border-box; /* Ensure padding/margins don't affect width */
+    
+  }
+  
+  /* Styling for individual chart components to ensure consistency */
+  .chart-row > div h1 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Make sure the charts look well on small screens */
+  @media (max-width: 768px) {
+    .chart-row {
+      flex-direction: column; /* Stack charts vertically on small screens */
+      align-items: center;
+    }
+  
+    .chart-row > div {
+      max-width: 100%;
+      margin-bottom: 30px; /* Add some space between stacked charts */
+    }
+  }
+  /* Make sure the charts look well on small screens */
+@media (max-width: 768px) {
+  .chart-row {
+    flex-direction: column; /* Stack charts vertically on small screens */
+    align-items: center;
+    width: 100%; /* Ensure it doesn't stretch more than the screen width */
+  }
+
+  .chart-row > div {
+    max-width: 100%; /* Ensure charts use full available width */
+    margin-bottom: 30px; /* Add some space between stacked charts */
+  }
+
+  .chart-row > div h1 {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Mobile View for very small devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .chart-row {
+    flex-direction: column; /* Stack charts vertically */
+    align-items: center;
+    width: 100%; /* Ensure it doesn't stretch more than the screen width */
+  }
+
+  .chart-row > div {
+    max-width: 100%; /* Full width on small screens */
+    margin-bottom: 20px; /* Slightly reduced gap between charts */
+  }
+
+  .chart-row > div h1 {
+    font-size: 14px; /* Smaller font size on very small screens */
+  }
+}

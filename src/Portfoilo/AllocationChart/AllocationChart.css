@@ -1,0 +1,172 @@
+.portfolio-allocation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 1600px;
+  }
+  
+  .portfolio-chart-section {
+    width: 45%;
+    text-align: center;
+  }
+  
+  .portfolio-amount {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .portfolio-chart {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .portfolio-donut {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#004b8d 95%, #ccc 0%);
+    position: relative;
+    transform: rotate(90deg); /* Rotate the circle to shift the gap to the right */
+  }
+  
+  .portfolio-donut::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .portfolio-chart-labels {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+    
+  }
+  
+  .portfolio-divider {
+    height: 100%;
+    width: 3px;
+    background-color: #ccc;
+  }
+  .portchartp{
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+/* Mobile view for 768px and below */
+@media (max-width: 768px) {
+  .portfolio-allocation-container {
+    flex-direction: column; /* Stack the elements vertically for tablet view */
+    align-items: center; /* Center-align the content */
+    padding: 15px; /* Adjust padding for smaller screens */
+    width: 100%; /* Ensure the container doesn't exceed the screen width */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center content horizontally */
+  }
+
+  .portfolio-chart-section {
+    width: 100%; /* Make the chart section full width on tablets */
+    margin-bottom: 15px; /* Add margin between the chart and amount */
+    text-align: center; /* Center align the chart on small screens */
+  }
+
+  .portfolio-amount {
+    font-size: 20px; /* Reduce font size for smaller screens */
+  }
+
+  .portfolio-chart {
+    width: 100%; /* Take full width */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Horizontally center the donut */
+    align-items: center; /* Vertically center the donut */
+  }
+
+  .portfolio-donut {
+    width: 80px; /* Make donut smaller */
+    height: 80px; /* Make donut smaller */
+    margin: 0 auto; /* Center the donut */
+  }
+
+  .portfolio-donut::after {
+    width: 50px; /* Reduce inner circle size */
+    height: 50px; /* Reduce inner circle size */
+  }
+
+  .portfolio-chart-labels {
+    font-size: 12px; /* Smaller font for labels */
+  }
+
+  .portchartp {
+    font-size: 16px; /* Reduce font size for text next to donut chart */
+    margin: 0; /* Remove margin to center the text */
+  }
+
+  .portfolio-divider {
+    display: none; /* Remove the divider for better spacing on smaller screens */
+  }
+}
+
+/* Mobile view for 480px and below */
+@media (max-width: 480px) {
+  .portfolio-allocation-container {
+    padding: 10px; /* Further reduce padding for small screens */
+    width: 100%; /* Ensure container width is 100% */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+
+  .portfolio-chart-section {
+    width: 100%; /* Make the chart section full width */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+    text-align: center; /* Center the chart on mobile */
+  }
+
+  .portfolio-amount {
+    font-size: 18px; /* Reduce font size for mobile screens */
+  }
+
+  .portfolio-chart {
+    width: 100%; /* Take full width */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Horizontally center the donut */
+    align-items: center; /* Vertically center the donut */
+  }
+
+  .portfolio-donut {
+    width: 70px; /* Make donut even smaller */
+    height: 70px; /* Make donut even smaller */
+    margin: 0 auto; /* Center the donut */
+  }
+
+  .portfolio-donut::after {
+    width: 40px; /* Further reduce inner circle size */
+    height: 40px; /* Further reduce inner circle size */
+  }
+
+  .portfolio-chart-labels {
+    font-size: 10px; /* Make labels even smaller */
+  }
+
+  .portchartp {
+    font-size: 14px; /* Further reduce font size for mobile */
+    margin: 0; /* Remove margin to center the text */
+  }
+
+  .portfolio-divider {
+    display: none; /* Remove divider for mobile */
+  }
+}

@@ -1,0 +1,244 @@
+.portfolio-dashboard-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  font-family: 'calibri';
+  color: #333;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.portfoliomanager-h3 {
+  font-size: 1.5em;
+  
+  color: #333;
+}
+
+.portfolio-accounts-section {
+  margin-bottom: 20px;
+}
+
+.portfolio-accounts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.portfolio-accounts-table th {
+  background-color: #24b676;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+}
+
+.portfolio-accounts-table td {
+ 
+  padding: 10px;
+  text-align:center;
+}
+
+.portfolio-accounts-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.portfolio-add-link {
+  text-align: center;
+  color: black;
+  cursor: pointer;
+}
+
+.portfolio-action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.portfolio-action-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e9b20e;
+  color: #fff;
+  cursor: pointer;
+}
+
+.portfolio-alert-button {
+  background-color: #e9b20e;
+}
+
+.portfolio-allocation-section {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.portfolio-allocation-chart {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.portfolio-pie-chart {
+  margin-top: 10px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background: conic-gradient(
+    #28a745 0% 100%,
+    #eaeaea 0% 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-weight: bold;
+}
+.portfolio-accounts-table th span{
+
+  display: block;
+  font-size: 12px;
+  color: white;
+  
+}
+.portfolio-accounts-table td span {
+  display: block;
+  font-size: 12px;
+  color: #24b676;
+}
+.portfolio-add {
+  color: #24b676;
+  font-weight: bold;
+  cursor: pointer;
+}
+.centered-content {
+  display: flex; /* Enables flexible alignment */
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center; /* Vertically centers the content */
+  text-align: center; /* Ensures inner text alignment */
+}
+.green-plus {
+  color: green;
+  font-weight: bold;
+}
+/* CSS for negative values */
+.negative-value {
+  color: red;
+}
+.portfolio-allocation-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile view for 768px and below */
+@media (max-width: 768px) {
+  .portfolio-dashboard-container {
+    padding: 15px; /* Reduce padding for tablets */
+  }
+
+  .portfoliomanager-h3 {
+    font-size: 1.3em; /* Adjust heading size for tablet screens */
+  }
+
+  .portfolio-accounts-table th,
+  .portfolio-accounts-table td {
+    padding: 8px; /* Reduce padding in table cells */
+  }
+
+  .portfolio-accounts-table th {
+    font-size: 14px; /* Adjust font size in the table header */
+  }
+
+  .portfolio-accounts-table td {
+    font-size: 13px; /* Adjust font size in table data */
+  }
+
+  .portfolio-action-buttons {
+    flex-direction: row; /* Stack the action buttons vertically */
+    gap: 8px; /* Reduce gap between buttons */
+    justify-content: flex-start; /* Align buttons to the left */
+  }
+
+  .portfolio-allocation-section {
+    flex-direction: column; /* Stack the allocation chart and pie chart vertically */
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .portfolio-pie-chart {
+    width: 120px; /* Make the pie chart smaller */
+    height: 120px;
+  }
+
+  .portfolio-allocation-chart {
+    padding: 15px; /* Reduce padding in the allocation chart */
+  }
+
+  .portfolio-add-link {
+    font-size: 14px; /* Adjust font size for the add link */
+  }
+}
+
+/* Mobile view for 480px and below */
+@media (max-width: 480px) {
+  .portfolio-dashboard-container {
+    padding: 10px; /* Reduce padding for smaller mobile screens */
+    width: 510px;
+  }
+  
+  .portfoliomanager-h3 {
+    font-size: 1.2em; /* Further reduce heading size */
+  }
+
+  .portfolio-accounts-table th,
+  .portfolio-accounts-table td {
+    padding: 6px; /* Further reduce padding in table cells */
+  }
+
+  .portfolio-accounts-table th {
+    font-size: 12px; /* Reduce font size in table header */
+  }
+
+  .portfolio-accounts-table td {
+    font-size: 11px; /* Reduce font size in table data */
+  }
+
+  .portfolio-action-buttons {
+    flex-direction: row; /* Stack buttons vertically */
+    gap: 6px; /* Reduce gap between buttons */
+    align-items: flex-start; /* Align buttons to the left */
+  }
+
+  .portfolio-allocation-section {
+    flex-direction: column; /* Stack allocation section vertically */
+    gap: 8px; /* Reduce gap */
+  }
+
+  .portfolio-pie-chart {
+    width: 100px; /* Make the pie chart even smaller */
+    height: 100px;
+  }
+
+  .portfolio-allocation-chart {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .portfolio-add-link {
+    font-size: 12px; /* Reduce font size for mobile */
+  }
+
+  .portfolio-add {
+    font-size: 14px; /* Adjust font size for "add" button */
+  }
+}
+
+
+
+
+

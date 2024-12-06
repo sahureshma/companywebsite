@@ -1,0 +1,67 @@
+.sipform-container {
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color:white;
+    margin-left: 100px;
+  }
+  
+  .sipform-info {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    border-bottom: 1px solid rgb(227, 221, 221); /* Add a blue bottom border */
+    padding-bottom: 10px; /* Add padding to give space between text and border */
+    margin-left: 20px;
+  }
+  
+  .sipform {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    flex-wrap: nowrap; /* All fields stay in one row */
+  }
+  
+  .sipform-field {
+    display: flex;
+    flex-direction: column;
+   
+    flex: 1;
+  }
+  
+  .sipform-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 30px;
+  }
+  
+  .sipform-input,
+  .sipform-select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    box-sizing: border-box;
+    margin-left: 20px;
+ 
+  }
+  
+  .sipform-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sipform-button:hover {
+    background-color: #0056b3;
+  }

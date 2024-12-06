@@ -1,0 +1,55 @@
+/* Market.css */
+.goldmarketthead{
+    margin-left: 220px;
+    font-size: 1.8rem;
+    font-family: 'calibri';
+    margin-bottom: 10px;
+   
+}
+.goldmarkett{
+    margin-top: 80px;
+}
+
+.gold-markett {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar styling */
+  .gold-markett .goldmarketsidebar {
+    width: 250px;
+    flex-shrink: 0;
+  }
+  
+  /* Content styling */
+  .gold-markett .goldmarketable {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .gold-markett {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .goldmarketsidebar {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .goldmarketable {
+      width: 100%;
+      padding: 15px;
+    }
+  }
